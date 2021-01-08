@@ -1,0 +1,60 @@
+:root {
+    --main-font:#1F2041;
+}
+
+html {
+    font-size:  10px;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif, Helvetica;
+    font-size: 1.2rem;
+    color: var(--main-font);
+    line-height: 1.5rem;
+}
+p, ul {
+    margin: 0;
+}
+.wrapper {
+    width: 32rem;
+}
+
+.field {
+    display: block ;
+    margin-bottom: 2rem;
+}
+.field__text {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.field__input {
+    width: 100%;
+    font: inherit;
+    height: 4.4rem;
+    padding: 0 1.5rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: rgba(31, 32, 65, 0.75);
+    background: #FFFFFF;
+    border: 0.1rem solid rgba(31, 32, 65, 0.25);
+    border-radius: 0.4rem;
+    outline: none;
+}
+.field__input::placeholder {
+    color: rgba(31, 32, 65, 0.25);
+}
+.field__input:hover, .field__input:focus {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.field__text_side {
+    font-weight: 400;
+    opacity: 0.5;
+    float: right;
+}
+
+
