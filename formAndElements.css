@@ -19,18 +19,63 @@ body {
 p, ul {
     margin: 0;
 }
-.wrapper {
-    width: 32rem;
+ul {
+    padding: 0;
+    list-style: none;
+}
+button {
+    font: inherit;
+    background: #FFFFFF;
+    padding: 0;
+    border: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
+.wrapper__first-row {
+    margin-top: 14rem;
+    margin-left: 14em;
+    display: flex;
+}
+
+.field__wrapper {
+    width: 32rem;
+}
 .field {
     display: block ;
-    margin-bottom: 2rem;
 }
 .field__text {
     text-transform: uppercase;
     font-weight: 700;
+}
+.field__margin_2044rem {
+    margin-bottom: 2.044rem;
+}
+.field__margin_2000rem {
+    margin-bottom: 2rem;
+}
+.field__margin_2256rem {
+    margin-bottom: 2.256rem;
+}
+.field__margin_4000rem {
+    margin-bottom: 4rem;
+}
+.field__margin_4056rem {
+    margin-bottom: 4.056rem;
+}
+.field__margin_4100rem {
+    margin-bottom: 4.1rem;
+}
+.field__margin_0500rem {
     margin-bottom: 0.5rem;
+}
+.field__margin_0544rem {
+    margin-bottom: 0.544rem;
+}
+.field__margin_0800rem {
+    margin-bottom: 0.8rem;
 }
 .field__input {
     width: 100%;
@@ -45,6 +90,9 @@ p, ul {
     border-radius: 0.4rem;
     outline: none;
 }
+.field__input-hidden::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
 .field__input::placeholder {
     color: rgba(31, 32, 65, 0.25);
 }
@@ -56,5 +104,363 @@ p, ul {
     opacity: 0.5;
     float: right;
 }
+.field__select {
+    appearance: none;
+}
+.field__wrapper-select {
+    position: relative;
+}
+.field__wrapper-select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -0.65rem;
+    right: 1.75rem;
+    display: block;
+    width: 0.9rem;
+    height: 0.9rem;
+    border: 0.2rem solid rgba(31, 32, 65, 0.5);
+    border-left: 0;
+    border-top: 0;
+    transform: rotateZ(45deg);
+    pointer-events: none;
+}
+.field__wrapper-2inputs {
+    display: flex;
+    justify-content: space-between;
+}
+.field__width_15rem {
+    width: 15rem;
+}
+.field__width_26rem {
+    width: 26.6rem;
+}
+.field__href {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4.4rem;
+    width: 4.4rem;
+    height: 4.4rem;
+}
+.field_margin-left {
+    margin-left: 22.3rem;
+}
 
+.button__wrapper {
+    margin-left: 12.6rem;
+    width: 26rem;
+}
+/* убирает невидимый пробел между псевдоклассом и текстом, также можно убрать через запись спанов в одну строку без пробелов */
+.button {
+    display: flex;
+    /* font-size: 0; */
+}
+.button__margin_1656 {
+    margin-bottom: 1.656rem;
+}
+.button__margin_1600 {
+    margin-bottom: 1.6rem;
+}
+.button__margin_1056 {
+    margin-bottom: 1.056rem;
+}
+.button__margin_1000 {
+    margin-bottom: 1rem;
+}
+.button__margin_4088 {
+    margin-bottom: 4.088rem;
+}
+.button__margin_4056 {
+    margin-bottom: 4.056rem;
+}
+.button__margin_1400 {
+    margin-bottom: 1.4rem;
+}
+.button__margin_4444 {
+    margin-bottom: 4.444rem;
+}
+.button__text {
+    font: inherit;
+    font-weight: 400;
+    opacity: 0.5;
+    font-size: 14px;
+    line-height: 2rem;
+    margin-left: 1rem;
+}
+.button__text_opacity075 {
+    opacity: 0.75;
+}
+.button__input {
+    display: none;
+}
+.button__checkbox-input {
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 0.4rem;
+}
+.button__checkbox-input::before {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 50%;
+    top: 50%;
+    margin-left: -0.3rem;
+    margin-top: -0.5rem;
+    height: 0.8rem;
+    width: 0.6rem;
+    border: 0.2rem solid;
+    transform: rotate(45deg);
+    border-left: 0;
+    border-top: 0;
+}
+.button__input:checked + .button__checkbox-input {
+    border: 1px solid #BC9CFF;
+}
+.button__input:checked + .button__checkbox-input::before {
+    display: block;
+}
+.button__radio-input {
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 50%;
+}
+.button__radio-input::before {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 50%;
+    top: 50%;
+    margin-left: -0.6rem;
+    margin-top: -0.6rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.button__radio-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 22.074rem;
 
+}
+/* как поменять цвет когда флажок на checked? */
+.button__text-radio {
+    font: inherit;
+    font-weight: 400;
+    color: rgba(31, 32, 65, 0.5);
+    font-size: 14px;
+    line-height: 2rem;
+    margin-left: 1rem;
+}
+.button__input:checked + .button__radio-input {
+    border: 1px solid #BC9CFF;
+}
+.button__input:checked + .button__radio-input::before {
+    display: block;
+}
+.button__checkbox-input_oval {
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+    height: 2rem;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 1rem;
+}
+.button__checkbox-input_oval::before {
+    content: "";
+    position: absolute;
+    left: 0.4rem;
+    top: 50%;
+    margin-top: -0.6rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    background: rgba(31, 32, 65, 0.25);
+}
+.button__checkbox-input_oval::after {
+    content: "";
+    position: absolute;
+    display: none;
+    right: 0.4rem;
+    top: 50%;
+    margin-top: -0.6rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.button__input:checked + .button__checkbox-input_oval {
+    border: 1px solid #BC9CFF;
+}
+.button__input:checked + .button__checkbox-input_oval::before {
+    display: none;
+}
+.button__input:checked + .button__checkbox-input_oval::after {
+    display: block;
+}
+.button__like-button-wrapper {
+    display: flex;
+    margin-bottom: 4rem;
+}
+.button-like {
+    display: inline-block;
+    width: 4rem;
+    height: 2rem;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 1rem;
+    background: #FFFFFF;
+    font-size: 10px;
+    line-height: 12px;
+}
+.button-like__heart {
+    display: inline-block;
+}
+.button-like__text { 
+    color: rgba(31, 32, 65, 0.25);
+}
+.button-like_pressed {
+    border-color: #BC9CFF;
+}
+.button-like__margin_left {
+    margin-left: 1rem;
+}
+.button-like_pressed .button-like__text {
+    color: #BC9CFF;
+}
+/* .button__text_pressed {
+    color: #BC9CFF;
+} */
+.button__star-greater-wrapper {
+    display: flex;
+}
+.button__star-wrapper {
+    display: flex;
+}
+.button__star-margin_left {
+    margin-left: 2rem;
+}
+.button__star {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: #FFFFFF;
+    padding: 0;
+    border: none;
+}
+
+.button__wrapper2 {
+    margin-left: 13.2rem;
+}
+
+.interim__wrapper {
+    width: 26.6rem;
+    height: 4.744rem;
+}
+.button__wrapper-2buttons {
+    display: flex;
+}
+.button_margin-left_1900 {
+    margin-left: 1.9rem;
+}
+.button__margin_3000 {
+    margin-bottom: 3rem;
+}
+.button_margin-left_2000 {
+    margin-left: 2rem;
+}
+.button__margin_3100 {
+    margin-bottom: 3.1rem;
+}
+.button__margin_3044 {
+    margin-bottom: 3.044rem;
+}
+.button__button {
+    width: 9.9rem;
+    height: 4.4rem;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 2.2rem;
+}
+.button__text4 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.button_opacity {
+    /* opacity нужно поменять только у границы */
+    opacity: 0.5;
+}
+.button__text5 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #BC9CFF;
+    text-transform: uppercase;
+}
+.button__button_white {
+    width: 9.9rem;
+    height: 4.4rem;
+    background: #FFFFFF;
+    border-radius: 2.2rem;
+    border: 0.2rem solid #BC9CFF;
+}
+.button__button_transparent-border {
+    width: 9.9rem;
+    height: 4.4rem;
+    background: #FFFFFF;
+    border-radius: 2.2rem;
+    border: 0.2rem solid rgba(188, 156, 255, 0.5);
+}
+.button__button_white-background {
+    width: 9.9rem;
+    height: 4.4rem;
+    background: #FFFFFF;
+    border-radius: 2.2rem;
+}
+.button__text6 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: rgba(31, 32, 65, 0.5);
+    text-transform: uppercase;
+}
+.button__button_long {
+    width: 32rem;
+    height: 4.4rem;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 2.2rem;
+}
+.button_margin-left {
+    margin-left: 27.6rem;
+}
+.button__wrapper-href {
+    display: flex;
+}
+.button__href_active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    color: #FFFFFF;
+}
+.button__href {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: #FFFFFF;
+}

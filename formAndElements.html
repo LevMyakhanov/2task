@@ -9,130 +9,193 @@
     <link rel="stylesheet" href="formAndElements.css">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper__first-row">
 
-    <label class="field">
-        <p class="field__text">text field <span class="field__text_side">Default</span></p>
-        <input class="field__input" type="email" name="email" placeholder="Email">
-    </label>
-    <label class="field">
-        <p class="field__text">text field <span class="field__text_side">Hover / Focus</span></p>
-        <input class="field__input" type="text" name="text" value="This is pretty awesome">
-    </label>
-    <label class="field">
-        <p class="field__text">Dropdown</p>
-        <select class="field__input" name="amount of guests">
-            <option value="Сколько гостей">Сколько гостей</option>
-            <option value="Сколько гостей">1</option>
-            <option value="Сколько гостей">2</option>
-            <option value="Сколько гостей">3</option>
-            <option value="Сколько гостей">4</option>
-        </select>
-    </label>
-    <label class="field">
-        <p class="field__text">masked text field</p>
-        <input class="field__input" type="date" name="masked text field">
-    </label>
-    <label>
-        <p>date Dropdown</p>
-        <input type="date" name="date_dropdown1">
-    </label>
-    <label>
-        <p>date Dropdown</p>
-        <input type="date" name="date_dropdown2">
-    </label>
-    <label>
-        <p>filter date Dropdown</p>
-        <!-- как выставить две даты в поле 19 авг-23 авг -->
-        <select>
-            <option value="Сколько гостей">1</option>
-            <option value="Сколько гостей">2</option>
-        </select>
-    </label>
-    <label>
-        <p>subscription text field</p>
-        <input type="email" name="subscription text field" placeholder="Email">
-        <a href="https://www.google.com/"><img src="img/icons/arrow_forward_violet.png" alt="img"></a>
-    </label>
+        <div class="field__wrapper">
+            <label class="field field__margin_2044rem">
+                <p class="field__text field__margin_0500rem">text field <span class="field__text_side field__margin_0800rem">Default</span></p>
+                <input class="field__input" type="email" name="email" placeholder="Email">
+            </label>
+            <label class="field field__margin_2000rem">
+                <p class="field__text field__margin_0500rem">text field <span class="field__text_side field__margin_0544rem">Hover / Focus</span></p>
+                <input class="field__input" type="text" name="text" value="This is pretty awesome">
+            </label>
+            <label class="field field__margin_2256rem">
+                <p class="field__text field__margin_0500rem">Dropdown</p>
+                <div class="field__wrapper-select">
+                    <select class="field__input field__select" name="amount of guests">
+                        <option value="Сколько гостей">Сколько гостей</option>
+                        <option value="Сколько гостей">1</option>
+                        <option value="Сколько гостей">2</option>
+                        <option value="Сколько гостей">3</option>
+                        <option value="Сколько гостей">4</option>
+                    </select>
+                </div>
+            </label>
+            <label class="field field__margin_4000rem">
+                <p class="field__text field__margin_0500rem">masked text field</p>
+                <input class="field__input field__input-hidden" type="date" name="masked text field">
+            </label>
+            <div class="field__wrapper-2inputs field__margin_4056rem">
+                <label class="field field__width_15rem">
+                    <p class="field__text field__margin_0544rem">date Dropdown</p>
+                    <div class="field__wrapper-select">
+                        <input class="field__input field__input-hidden" type="date" name="date_dropdown1">
+                    </div>
+                </label>
+                <label class="field field__width_15rem">
+                    <p class="field__text field__margin_0544rem">date Dropdown</p>
+                    <div class="field__wrapper-select">
+                        <input class="field__input field__input-hidden" type="date" name="date_dropdown2">
+                    </div>
+                </label>
+            </div>
+            <label class="field field__width_26rem field__margin_4100rem">
+                <p class="field__text field__margin_0500rem">filter date Dropdown</p>
+                <!-- как выставить две даты в поле 19 авг-23 авг -->
+                <div class="field__wrapper-select">
+                    <select class="field__input field__select">
+                        <option value="Сколько гостей">19 авг - 23 авг</option>
+                        <option value="Сколько гостей">1</option>
+                        <option value="Сколько гостей">2</option>
+                    </select>
+                </div>
+            </label>
+            <label class="field field__width_26rem">
+                <p class="field__text field__margin_0500rem">subscription text field</p>
+                <input class="field__input" type="email" name="subscription text field" placeholder="Email">
+                <div class="field__href field_margin-left">
+                    <a href="https://www.google.com/"><img src="img/icons/arrow_forward_violet.png" alt="img"></a>
+                </div>
+            </label>
+        </div>
 
+        <div class="button__wrapper">
+            <!-- как убрать расстояние между ::before элементами-->
+            <p class="field__text button__margin_1656">Checkbox Buttons</p>
+            <label class="button button__margin_1056">
+                <input class="button__input" type="checkbox" name="smoking">
+                <span class="button__checkbox-input"></span>
+                <span class="button__text">Можно курить</span>
+            </label>
+            <label class="button button__margin_1000">
+                <input class="button__input" type="checkbox" name="pets" checked>
+                <span class="button__checkbox-input"></span>
+                <span class="button__text">Можно с питомцами</span>
+            </label>
+            <label class="button button__margin_4088">
+                <input class="button__input" type="checkbox" name="guests" checked>
+                <span class="button__checkbox-input"></span>
+                <p class="button__text">Можно пригласить гостей <br>(до 10 человек)</p>
+            </label>
+            <p class="field__text button__margin_1600">Radio Buttons</p>
+            <div class="button__radio-wrapper button__margin_4056">
+                <label class="button">
+                    <input class="button__input" type="radio" name="gender" checked>
+                    <span class="button__radio-input"></span>
+                    <span class="button__text-radio">Мужчина</span>
+                </label>
+                <label class="button">
+                    <input class="button__input" type="radio" name="gender">
+                    <span class="button__radio-input"></span>
+                    <span class="button__text-radio">Женщина</span>
+                </label>
+            </div>
+            <p class="field__text button__margin_1600">Toggle</p>
+            <label class="button button__margin_1400">
+                <input class="button__input" type="checkbox" name="special offers" checked>
+                <span class="button__checkbox-input_oval"></span>
+                <span class="button__text button__text_opacity075">Получать спецпредложения</span>
+            </label>
+            <label class="button button__margin_4444">
+                <input class="button__input" type="checkbox" name="special offers disabled">
+                <span class="button__checkbox-input_oval"></span>
+                <span class="button__text button__text_opacity075">Получать спецпредложения</span>
+            </label>
+            <p class="field__text button__margin_1600">like button</p>
+            <!-- добавил div чтобы избавиться от пробела по умолчанию между кнопками -->
+            <div class="button__like-button-wrapper">
+                <button class="button-like ">
+                    <img class="button-like__heart" src="img/icons/favorite_border.png" alt="heart_unpressed">
+                    <span class="button-like__text">2</span>
+                </button>
+                <button class="button-like button-like_pressed button-like__margin_left">
+                    <img class="button-like__heart" src="img/icons/favorite.png" alt="heart_pressed">
+                    <span class="button-like__text">12</span>
+                </button>
+            </div>
+            <p class="field__text button__margin_1600">rate button</p>
+            <div class="button__star-greater-wrapper">
+                <div class="button__star-wrapper">
+                    <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
+                    <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
+                    <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
+                    <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
+                    <button class="button__star"><img src="img/icons/star_border.png" alt="star"></button>
+                </div>
+                <div class="button__star-wrapper button__star-margin_left">
+                    <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
+                    <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
+                    <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
+                    <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
+                    <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
+                </div>
+            </div>
+            <label>
+        </div>
+
+        <div class="button__wrapper2">
+            <div class="interim__wrapper button__margin_4056">
+                <p class="field__text">Range Slider<span class="field__text_side">5 000₽ - 10 000₽</span></p>
+                <input type="range" name="Range Slider">
+            </div>
+            </label>
+            <p class="field__text button__margin_1600">buttons</p>
+            <div class="button__wrapper-2buttons button__margin_3000">
+                <button class="button__button"><span class="button__text4">click me</span></button>
+                <button class="button__button button_opacity button_margin-left_1900"><span class="button__text4">click me</span></button>
+            </div>
+            <div class="button__wrapper-2buttons button__margin_3100">
+                <button class="button__button_white"><span class="button__text5">click me</span></button>
+                <button class="button__button_transparent-border button_margin-left_1900"><span class="button__text5">click me</span></button>
+            </div>
+            <div class="button__wrapper-2buttons button__margin_3044">
+                <button ><span class="button__text5">click me</span></button>
+                <button class="button_margin-left_2000"><span class="button__text6">click me</span></button>
+            </div>
+            <button class="button__button_long field__margin_4000rem"><span class="button__text4">перейти к оплате</span></button>
+            <div class="field__href button_margin-left">
+                <a href="https://www.google.com/"><img src="img/icons/arrow_forward_white.png" alt="img"></a>
+            </div>
+
+            <p class="field__text">pagination</p>
+            <div class="button__wrapper-href">
+                <a class="button__href" href="#"><span class="button__href_active">1</span></a>
+                <a class="button__href" href="#"><span class="field__text_side">2</span></a>
+                <a class="button__href" href="#"><span class="field__text_side">3</span></a>
+                <a class="button__href" href="#"><span class="field__text_side">4</span></a>
+                <a class="button__href" href="#"><span class="field__text_side">5</span></a>
+                <a class="button__href" href="#"><span class="field__text_side">6</span></a>
+                <a class="button__href" href="#"><span class="field__text_side">7</span></a>
+                <a class="button__href" href="#"><span class="field__text_side">8</span></a>
+                <a class="button__href" href="#"><span class="field__text_side">9</span></a>
+                <a class="button__href" href="#"><span class="field__text_side">10</span></a>
+                <a class="button__href" href="#"><span class="field__text_side">11</span></a>
+                <a class="button__href" href="#"><span class="field__text_side">12</span></a>
+                <a class="button__href" href="#"><span class="field__text_side">13</span></a>
+                <a class="button__href" href="#"><span class="field__text_side">14</span></a>
+                <a class="button__href" href="#"><span class="field__text_side">15</span></a>
+                <a href="#"><img src="img/icons/arrow_forward_white.png" alt=""></a>
+            </div>
+            
+            <p>1 – 12 из 100+ вариантов аренды</p>
+        </div>
     </div>
     
-        <p>Checkbox Buttons</p>
-        <label>
-            <input type="checkbox" name="smoking">Можно курить
-        </label>
-        <br>
-        <label>
-            <input type="checkbox" name="pets" checked>Можно с питомцами
-        </label>
-        <br>
-        <label>
-            <input type="checkbox" name="guests" checked>Можно пригласить гостей (до 10 человек)
-        </label>
-        <!-- Почему "Radio Buttons" начинается с новой строки, а не в строке "Можно пригласить гостей (до 10 человек)" -->
-        <p>Radio Buttons</p>
-        <label>
-            <input type="radio" name="gender" checked>Мужчина
-        </label>
-        <label>
-            <input type="radio" name="gender">Женщина
-        </label>
-        <p>Toggle</p>
-        <label>
-            <input type="checkbox" name="special offers">Получать спецпредложения
-        </label>
-        <br>
-        <label>
-            <input type="checkbox" name="special offers">Получать спецпредложения
-        </label>
-        <p>like button</p>
-        <button>2</button>
-        <button>12</button>
-        <p>rate button</p>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <label>
-            <p>Range Slider 5 000₽ - 10 000₽</p>
-            <input type="range" name="Range Slider">
-        </label>
-        <p>buttons</p>
-        <button>click me</button>
-        <button>click me</button>
-        <br>
-        <button>click me</button>
-        <button>click me</button>
-        <br>
-        <button>click me</button>
-        <button>click me</button>
-        <br>
-        <button>перейти к оплате</button>
-        
-    <p>pagination</p>
-    <a href="#">1</a>
-    <a href="#">2</a>
-    <a href="#">3</a>
-    <a href="#">4</a>
-    <a href="#">5</a>
-    <a href="#">6</a>
-    <a href="#">7</a>
-    <a href="#">8</a>
-    <a href="#">9</a>
-    <a href="#">10</a>
-    <a href="#">11</a>
-    <a href="#">12</a>
-    <a href="#">13</a>
-    <a href="#">14</a>
-    <a href="#">15</a>
-    <a href="#"><img src="img/icons/arrow_forward_white.png" alt=""></a>
-    <p>1 – 12 из 100+ вариантов аренды</p>
+    
+
+    
+
     <label>
         <p>dropdown Default</p>
     <select name="rooms&beds">
