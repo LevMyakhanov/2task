@@ -13,12 +13,12 @@
 
         <div class="field__wrapper">
             <label class="field field__margin_2044rem">
-                <p class="field__text field__margin_0500rem">text field <span class="field__text_side field__margin_0800rem">Default</span></p>
-                <input class="field__input" type="email" name="email" placeholder="Email">
+                <p class="field__text field__margin_0500rem">text field <span class="field__text_side field__margin_-0300rem">Default</span></p>
+                <input class="field__input field__input-text" type="email" name="email" placeholder="Email">
             </label>
             <label class="field field__margin_2000rem">
                 <p class="field__text field__margin_0500rem">text field <span class="field__text_side field__margin_0544rem">Hover / Focus</span></p>
-                <input class="field__input" type="text" name="text" value="This is pretty awesome">
+                <input class="field__input field__input-text" type="text" name="text" value="This is pretty awesome">
             </label>
             <label class="field field__margin_2256rem">
                 <p class="field__text field__margin_0500rem">Dropdown</p>
@@ -86,7 +86,7 @@
             <label class="button button__margin_4088">
                 <input class="button__input" type="checkbox" name="guests" checked>
                 <span class="button__checkbox-input"></span>
-                <p class="button__text">Можно пригласить гостей <br>(до 10 человек)</p>
+                <p class="button__text button__text_lh18">Можно пригласить гостей <br>(до 10 человек)</p>
             </label>
             <p class="field__text button__margin_1600">Radio Buttons</p>
             <div class="button__radio-wrapper button__margin_4056">
@@ -115,7 +115,7 @@
             <p class="field__text button__margin_1600">like button</p>
             <!-- добавил div чтобы избавиться от пробела по умолчанию между кнопками -->
             <div class="button__like-button-wrapper">
-                <button class="button-like ">
+                <button class="button-like">
                     <img class="button-like__heart" src="img/icons/favorite_border.png" alt="heart_unpressed">
                     <span class="button-like__text">2</span>
                 </button>
@@ -168,63 +168,76 @@
                 <a href="https://www.google.com/"><img src="img/icons/arrow_forward_white.png" alt="img"></a>
             </div>
 
-            <p class="field__text">pagination</p>
-            <div class="button__wrapper-href">
-                <a class="button__href" href="#"><span class="button__href_active">1</span></a>
-                <a class="button__href" href="#"><span class="field__text_side">2</span></a>
-                <a class="button__href" href="#"><span class="field__text_side">3</span></a>
-                <a class="button__href" href="#"><span class="field__text_side">4</span></a>
-                <a class="button__href" href="#"><span class="field__text_side">5</span></a>
-                <a class="button__href" href="#"><span class="field__text_side">6</span></a>
-                <a class="button__href" href="#"><span class="field__text_side">7</span></a>
-                <a class="button__href" href="#"><span class="field__text_side">8</span></a>
-                <a class="button__href" href="#"><span class="field__text_side">9</span></a>
-                <a class="button__href" href="#"><span class="field__text_side">10</span></a>
-                <a class="button__href" href="#"><span class="field__text_side">11</span></a>
-                <a class="button__href" href="#"><span class="field__text_side">12</span></a>
-                <a class="button__href" href="#"><span class="field__text_side">13</span></a>
-                <a class="button__href" href="#"><span class="field__text_side">14</span></a>
-                <a class="button__href" href="#"><span class="field__text_side">15</span></a>
-                <a href="#"><img src="img/icons/arrow_forward_white.png" alt=""></a>
+            <p class="field__text button__margin_1644">pagination</p>
+            <div class="pagination button__wrapper-href button__margin_1056">
+                <!-- повернуть стрелку на 180 deg -->
+                <a class="pagination__href-arrow d-none" href="#"><img src="img/icons/arrow_back.png" alt=""></a>
+                <a class="pagination__href" href="#"><span class="pagination__href_active">1</span></a>
+                <a class="pagination__href" href="#"><span class="field__text_side">2</span></a>
+                <a class="pagination__href" href="#"><span class="field__text_side">3</span></a>
+                <a class="pagination__href" href="#"><span class="field__text_side">...</span></a>
+                <a class="pagination__href d-none" href="#"><span class="field__text_side">4</span></a>
+                <a class="pagination__href d-none" href="#"><span class="field__text_side">5</span></a>
+                <a class="pagination__href d-none" href="#"><span class="field__text_side">6</span></a>
+                <a class="pagination__href d-none" href="#"><span class="field__text_side">7</span></a>
+                <a class="pagination__href d-none" href="#"><span class="field__text_side">8</span></a>
+                <a class="pagination__href d-none" href="#"><span class="field__text_side">9</span></a>
+                <a class="pagination__href d-none" href="#"><span class="field__text_side">10</span></a>
+                <a class="pagination__href d-none" href="#"><span class="field__text_side">11</span></a>
+                <a class="pagination__href d-none" href="#"><span class="field__text_side">12</span></a>
+                <a class="pagination__href d-none" href="#"><span class="field__text_side">13</span></a>
+                <a class="pagination__href d-none" href="#"><span class="field__text_side">14</span></a>
+                <a class="pagination__href" href="#"><span class="field__text_side">15</span></a>
+                <a class="pagination__href-arrow" href="#"><img src="img/icons/arrow_forward_white.png" alt=""></a>
             </div>
-            
-            <p>1 – 12 из 100+ вариантов аренды</p>
+            <p class="button__text button__text_opacity075">1 – 12 из 100+ вариантов аренды</p>
+        </div>
+    </div>
+    
+
+    <div class="wrapper__second-row">
+        <div class="table__wrapper-column1">
+            <label>
+                <p class="field__text field__margin_0500rem">dropdown<span class="field__text_side">default</span></p>
+                <div class="table__wrapper-select field__margin_2000rem">
+                    <select class="table__select table__select_border025" name="rooms&beds">
+                        <option value="">1room&1bed</option>
+                        <option value="">1room&2beds</option>
+                        <option value="">2rooms&2beds</option>
+                    </select>
+                </div>
+            </label>
+            <p class="field__text table__margin_0456rem">dropdown<span class="field__text_side">expanded</span></p>
+            <div class="table__wrapper-select">
+                <select class="table__select table__select_border05" name="rooms&beds">
+                    <option value="">1room&1bed</option>
+                    <option value="">1room&2beds</option>
+                    <option value="">2rooms&2beds</option>
+                </select>
+            </div>
+            <div class="table__wrapper-counter">
+                <div class="table__text-button">
+                    <span class="field__text">спальни</span>
+                    <div>
+                        <button class="table__button">-</button>
+                        <span class="field__text table__amount">2</span>
+                        <button class="table__button">+</button>
+                    </div>
+                </div>
+                <span>кровати</span>
+                <button>-</button>
+                <span>2</span>
+                <button>+</button>
+                <br>
+                <span>ванные комнаты</span>
+                <button>-</button>
+                <span>2</span>
+                <button>+</button>
+            </div>
         </div>
     </div>
     
     
-
-    
-
-    <label>
-        <p>dropdown Default</p>
-    <select name="rooms&beds">
-        <option value="">1room&1bed</option>
-        <option value="">1room&2beds</option>
-        <option value="">2rooms&2beds</option>
-    </select>
-    </label>
-    <p>dropdown expanded</p>
-    <select name="rooms&beds-table">
-        <option value="">1room&1bed</option>
-        <option value="">1room&2beds</option>
-        <option value="">2rooms&2beds</option>
-    </select>
-    <br>
-    <span>спальни</span>
-    <button>-</button>
-    <span>2</span>
-    <button>+</button>
-    <br>
-    <span>кровати</span>
-    <button>-</button>
-    <span>2</span>
-    <button>+</button>
-    <br>
-    <span>ванные комнаты</span>
-    <button>-</button>
-    <span>2</span>
-    <button>+</button>
     <p>dropdown</p>
     <select name="amountOfGuests">
         <option value="">1 гость</option>
