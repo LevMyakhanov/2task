@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cards.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper__column1">
+        <div class="wrapper__column1_row1">
+            <h1>Найдём номера под ваши пожелания</h1>
+            <div class="rooms-search__wrapper-2inputs">
+                <div class="rooms-search_width-15rem">
+                    <p>прибытие</p>
+                    <!-- div нужен для создания after, так как у input after не создашь -->
+                    <div class="rooms-search__wrapper-select">
+                        <input class="rooms-search__input" type="date">
+                    </div>
+                </div>
+                <div class="rooms-search_width-15rem">
+                    <p>выезд</p>
+                    <div class="rooms-search__wrapper-select">
+                        <input class="rooms-search__input" type="date">
+                    </div>
+                </div>
+            </div>
+                <p>гости</p>
+                <div class="rooms-search__wrapper-select">
+                    <select class="rooms-search__input rooms-search__select" name="amountOfGuests">
+                        <option value="">Сколько гостей</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+                </div>
+            <button class="rooms-search__button"><span class="rooms-search__button-text">подобрать номер</span></button>
+        </div>
+    </div>
+</body>
+</html>

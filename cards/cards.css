@@ -1,0 +1,122 @@
+html {
+    font-size:  10px;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif, Helvetica;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #1f2041;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    border-radius: 0.4rem;
+    outline: none;
+    background: #FFFFFF;
+    padding: 0 1.5rem;
+}
+h1 {
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: none;
+}
+p, ul {
+    margin: 0;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+button {
+    font: inherit;
+    background: #FFFFFF;
+    padding: 0;
+    border: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper__column1 {
+    width: 38rem;
+}
+.wrapper__column1_row1 {
+    width: 32rem;
+}
+.rooms-search__wrapper-2inputs {
+    display: flex;
+    justify-content: space-between;
+}
+.rooms-search_width-15rem {
+    width: 15rem;
+}
+.rooms-search__wrapper-select {
+    position: relative;
+}
+.rooms-search__wrapper-select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -0.65rem;
+    right: 1.75rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    border: 0.2rem solid rgba(31, 32, 65, 0.5);
+    border-left: 0;
+    border-top: 0;
+    transform: rotateZ(45deg);
+    pointer-events: none;
+}
+.rooms-search__input {
+    font: inherit;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    color: rgba(31, 32, 65, 0.75);
+    width: 100%;
+    height: 4.4rem;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 0.4rem;
+    padding-left: 1.5rem;
+    text-transform: uppercase;
+}
+/* здесь получилось избежать использования класса field__input-hidden */
+.rooms-search__input::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+.rooms-search__select {
+    appearance: none;
+    text-transform: none;
+}
+.rooms-search__button-text {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.rooms-search__button {
+    width: 32rem;
+    height: 4.4rem;
+    border-radius: 2.2rem;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    position: relative;
+}
+.rooms-search__button::after {
+    content:"";
+    position: absolute;
+    width: 4.4rem;
+    height: 4.4rem;
+    right: 0;
+    top: 50%;
+    margin-top: -2.2rem;
+    background-image: url("img/icons/arrow_forward_white.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
