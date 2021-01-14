@@ -144,27 +144,24 @@
         </div>
 
         <div class="wrapper__first-row_column3">
-            <div class="interim__wrapper button__margin_4056">
+            <div class="interim__wrapper checkbox-button__margin_4056">
                 <p class="field__text">Range Slider<span class="field__text_side">5 000₽ - 10 000₽</span></p>
                 <input type="range" name="Range Slider">
             </div>
-            <p class="field__text button__margin_1600">buttons</p>
+            <p class="field__text checkbox-button__margin_1600">buttons</p>
             <div class="button__wrapper-2buttons button__margin_3000">
-                <button class="button__button"><span class="button__text4">click me</span></button>
-                <button class="button__button button_opacity button_margin-left_1900"><span class="button__text4">click me</span></button>
+                <button class="button button_linear-gradient"><span class="button__text">click me</span></button>
+                <button class="button button_linear-gradient button_opacity button_margin-left_1900"><span class="button__text">click me</span></button>
             </div>
             <div class="button__wrapper-2buttons button__margin_3100">
-                <button class="button__button_white"><span class="button__text5">click me</span></button>
-                <button class="button__button_transparent-border button_margin-left_1900"><span class="button__text5">click me</span></button>
+                <button class="button button_border-BC9CFF"><span class="button__text button__text_BC9CFF">click me</span></button>
+                <button class="button button_transparent-border button_margin-left_1900"><span class="button__text button__text_BC9CFF">click me</span></button>
             </div>
             <div class="button__wrapper-2buttons button__margin_3044">
-                <button ><span class="button__text5">click me</span></button>
-                <button class="button_margin-left_2000"><span class="button__text6">click me</span></button>
+                <button ><span class="button__text button__text_BC9CFF">click me</span></button>
+                <button class="button_margin-left_2000"><span class="button__text button__text_1f204180">click me</span></button>
             </div>
-            <button class="button__button_long field__margin_4000rem"><span class="button__text4">перейти к оплате</span></button>
-            <div class="field__href button_margin-left">
-                <a href="https://www.google.com/"><img src="img/icons/arrow_forward_white.png" alt="img"></a>
-            </div>
+            <button class="button button_long field__margin_4000rem"><span class="button__text">перейти к оплате</span></button>
 
             <p class="field__text button__margin_1644">pagination</p>
             <div class="pagination button__wrapper-href button__margin_1056">
@@ -323,9 +320,8 @@
     
     <div class="wrapper__third-row">
         <div class="wrapper__third-row_column1">
-            <label>
-                <details>
-                    <summary class="list__margin_1744">
+                <details class="expandable-list">
+                    <summary class="expandable-list__summary field__wrapper-select list__margin_1744">
                         <span class="field__text">expandable checkbox list</span>
                     </summary>
                     <div class="checkbox-list">
@@ -361,7 +357,43 @@
                         </label>
                     </div>
                 </details>
-            </label>
+                <details class="expandable-list" open>
+                    <summary class="expandable-list__summary field__wrapper-select list__margin_1744">
+                        <span class="field__text">expandable checkbox list</span>
+                    </summary>
+                    <div class="checkbox-list">
+                        <label class="checkbox-button">
+                            <input class="checkbox-button__input" type="checkbox" name="accesouarces">
+                            <span class="checkbox-button__fake-input"></span>
+                            <span class="checkbox-button__text">Завтрак</span>
+                        </label>
+                        <label class="checkbox-button">
+                            <input class="checkbox-button__input" type="checkbox" name="accesouarces" checked>
+                            <span class="checkbox-button__fake-input"></span>
+                            <span class="checkbox-button__text">Письменный стол</span>
+                        </label>
+                        <label class="checkbox-button">
+                            <input class="checkbox-button__input" type="checkbox" name="accesouarces" checked>
+                            <span class="checkbox-button__fake-input"></span>
+                            <span class="checkbox-button__text">Стул для кормления</span>
+                        </label>
+                        <label class="checkbox-button">
+                            <input class="checkbox-button__input" type="checkbox" name="accesouarces" checked>
+                            <span class="checkbox-button__fake-input"></span>
+                            <span class="checkbox-button__text">Кроватка</span>
+                        </label>
+                        <label class="checkbox-button">
+                            <input class="checkbox-button__input" type="checkbox" name="accesouarces">
+                            <span class="checkbox-button__fake-input"></span>
+                            <span class="checkbox-button__text">Телевизор</span>
+                        </label>
+                        <label class="checkbox-button">
+                            <input class="checkbox-button__input" type="checkbox" name="accesouarces">
+                            <span class="checkbox-button__fake-input"></span>
+                            <span class="checkbox-button__text">Шампунь</span>
+                        </label>
+                    </div>
+                </details>
         </div>
 
         <div class="wrapper__third-row_column2">
@@ -382,11 +414,10 @@
 
         <div class="wrapper__third-row_column3">
             <p class="field__text checkbox-button__margin_1600">bullet list</p>
-            <ul>
-                <span class="list__fake"></span>
-                <li class="checkbox-button__text checkbox-button__text_opacity075 checkbox-button__margin_1000">Нельзя с питомцами</li>
-                <li class="checkbox-button__text checkbox-button__text_opacity075 checkbox-button__margin_1000">Без вечеринок и мероприятий</li>
-                <li class="checkbox-button__text checkbox-button__text_opacity075 checkbox-button__margin_1000">Время прибытия — после 13:00,<br> а выезд до 12:00</li>
+            <ul class="bullet-list">
+                <li class="bullet-list__item"><span class="checkbox-button__text bullet-list__text checkbox-button__text_opacity075">Нельзя с питомцами</span></li>
+                <li class="bullet-list__item"><span class="checkbox-button__text bullet-list__text checkbox-button__text_opacity075">Без вечеринок и мероприятий</span></li>
+                <li class="bullet-list__item"><span class="checkbox-button__text bullet-list__text checkbox-button__text_opacity075">Время прибытия — после 13:00,<br> а выезд до 12:00</span></li>
             </ul>
         </div>
     </div>
@@ -394,23 +425,27 @@
     <div class="wrapper__fourth-row">
 
         <div class="wrapper__fourth-row_column1">
-            <div class="advantages advantages_padding-up">
-                <img src="img/icons/insert_emoticon.png" alt="smile">
-                <p class="checkbox-button__text advantages-text_padding"><span class="checkbox-button__text_bold">Комфорт</span><br>Шумопоглощающие стены</p>
+            <div class="advantages">
+                <div class="advantages__img">
+                    <img src="img/icons/insert_emoticon.png" alt="smile">
+                </div>
+                <p class="checkbox-button__text"><span class="checkbox-button__text_bold advantages__text">Комфорт</span>Шумопоглощающие стены</p>
             </div>
             <div class="advantages advantages_padding-down">
-                <img src="img/icons/location_city.png" alt="building">
-                <p class="checkbox-button__text"><span class="checkbox-button__text_bold">Удобство</span><br>Окно в каждой из спален</p>
+                <div class="advantages__img">
+                    <img src="img/icons/location_city.png" alt="building">
+                </div>
+                <p class="checkbox-button__text"><span class="checkbox-button__text_bold advantages__text">Удобство</span>Окно в каждой из спален</p>
             </div>
         </div>
 
         <div class="wrapper__fourth-row_column2">
-            <div class="comments">
+            <div class="comments list__margin_1500">
                 <img src="img/icons/image.png" alt="avatarka">
-                <p class="checkbox-button__text"><span class="checkbox-button__text_bold">Мурад Сарафанов</span><br>5 дней назад</p>
+                <p class="checkbox-button__text"><span class="checkbox-button__text_bold advantages__text">Мурад Сарафанов</span>5 дней назад</p>
             </div>
             <div class="comments">
-                <button class="button-like button-like_pressed button-like__margin_left">
+                <button class="button-like button-like_pressed">
                     <img class="button-like__heart" src="img/icons/favorite.png" alt="heart_pressed">
                     <span class="button-like__text">12</span>
                 </button>
