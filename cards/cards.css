@@ -15,13 +15,25 @@ body {
     line-height: 1.5rem;
     border-radius: 0.4rem;
     outline: none;
-    background: #FFFFFF;
     padding: 0 1.5rem;
 }
 h1 {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
     text-transform: none;
+    margin: 0;
+}
+h2 {
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    text-transform: none;
+    margin: 0;
+}
+h3 {
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin: 0;
 }
 p, ul {
     margin: 0;
@@ -41,11 +53,76 @@ a {
     color: inherit;
 }
 
+.mb_22px {
+    /* нижний отступ 2.2rem, а не 2.1, так как line-height двух строчек получается 5.8rem,
+     а высота текста в макете 5.9rem */
+    margin-bottom: 2.2rem;
+}
+.mb_5px {
+    margin-bottom: 0.5rem;
+}
+.mb_20px {
+    margin-bottom: 2rem;
+}
+.mb_31px {
+    margin-bottom: 3.1rem;
+}
+.mb_10px {
+    margin-bottom: 1rem;
+}
+.mb_23px {
+    margin-bottom: 2.3rem;
+}
+.mb_24px {
+    margin-bottom: 2.4rem;
+}
+.mb_30px {
+    margin-bottom: 3rem;
+}
+.mb_40px {
+    margin-bottom: 4rem;
+}
+
+
+.ml_20px {
+    margin-left: 2rem;
+}
+.ml_10px {
+    margin-left: 1rem;
+}
+
+
+
+.lh_20px {
+    line-height: 2rem;
+}
+.lh_18px {
+    line-height: 1.8rem;
+}
+.lh_17px {
+    line-height: 1.7rem;
+}
+.lh_22px {
+    line-height: 2.2rem;
+}
+
+.cards {
+    display: flex;
+    width: 144rem;
+    height: 135rem;
+    background: #E5E5E5;
+    padding: 15rem 14rem 14rem 14rem ;
+}
 .wrapper__column1 {
     width: 38rem;
 }
 .wrapper__column1_row1 {
-    width: 32rem;
+    width: 38rem;
+    background: #FFFFFF;
+    border: 0.1rem solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 2.5rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+    padding: 4rem 3rem 3rem 3rem;
 }
 .rooms-search__wrapper-2inputs {
     display: flex;
@@ -84,6 +161,9 @@ a {
     padding-left: 1.5rem;
     text-transform: uppercase;
 }
+.rooms-search__input::placeholder {
+    color: rgba(31, 32, 65, 0.25);
+}
 /* здесь получилось избежать использования класса field__input-hidden */
 .rooms-search__input::-webkit-calendar-picker-indicator {
     opacity: 0;
@@ -119,4 +199,143 @@ a {
     background-image: url("img/icons/arrow_forward_white.png");
     background-repeat: no-repeat;
     background-position: center;
+}
+
+
+.registration__radio-wrapper {
+    display: flex;
+}
+.registration__radio-button {
+    display: flex;
+}
+.registration__radio {
+    display: none;
+}
+.registration__fake-input {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 50%;
+}
+.registration__fake-input::before {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 50%;
+    top: 50%;
+    margin-left: -0.6rem;
+    margin-top: -0.6rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.registration__radio:checked + .registration__fake-input {
+    border: 1px solid #BC9CFF;
+}
+.registration__radio:checked + .registration__fake-input::before {
+    display: block;
+}
+.registration__radio:checked ~ .registration__text {
+    color: rgba(31, 32, 65, 0.75);
+}
+.registration__toggle {
+    position: relative;
+    width: 4rem;
+    height: 2rem;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 1rem;
+}
+.registration__toggle::before {
+    content: "";
+    position: absolute;
+    left: 0.4rem;
+    top: 50%;
+    margin-top: -0.6rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    background: rgba(31, 32, 65, 0.25);
+}
+.registration__toggle::after {
+    content: "";
+    position: absolute;
+    display: none;
+    right: 0.4rem;
+    top: 50%;
+    margin-top: -0.6rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.registration__radio:checked + .registration__toggle {
+    border: 1px solid #BC9CFF;
+}
+.registration__radio:checked + .registration__toggle::before {
+    display: none;
+}
+.registration__radio:checked + .registration__toggle::after {
+    display: block;
+}
+.text-fs14 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(31, 32, 65, 0.75);
+}
+.text-fs14_black {
+    color: black;
+}
+.registration__wrapper-button-href {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.registration__button {
+    width: 9.9rem;
+    height: 4.4rem;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 2.2rem;
+}
+.registration__button_padding {
+    padding: 0.2rem;
+}
+.registration__button_inside {
+    width: 9.5rem;
+    height: 4rem;
+    border-radius: 2.2rem;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registration__text_BC9CFF {
+    font-weight: 700;
+    color: #BC9CFF;
+    text-transform: uppercase;
+}
+.registration__href-text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #000;
+    text-transform: none;
+}
+
+.tt_none {
+    text-transform: none;
+}
+.wrapper__text {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper__text_small {
+    height: 3rem;
+    display: flex;
+    align-items: flex-end;
+}
+.text-fs6 {
+    font-size: 0.6rem;
+    line-height: 1rem;
 }

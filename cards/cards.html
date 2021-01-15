@@ -9,26 +9,27 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper__column1">
-        <div class="wrapper__column1_row1">
-            <h1>Найдём номера под ваши пожелания</h1>
-            <div class="rooms-search__wrapper-2inputs">
-                <div class="rooms-search_width-15rem">
-                    <p>прибытие</p>
-                    <!-- div нужен для создания after, так как у input after не создашь -->
-                    <div class="rooms-search__wrapper-select">
-                        <input class="rooms-search__input" type="date">
+    <div class="cards">
+        <div class="wrapper__column1">
+            <div class="wrapper__column1_row1 mb_40px">
+                <h1 class="mb_22px">Найдём номера под ваши пожелания</h1>
+                <div class="rooms-search__wrapper-2inputs mb_20px">
+                    <div class="rooms-search_width-15rem">
+                        <p class="mb_5px">прибытие</p>
+                        <!-- div нужен для создания after, так как у input after не создашь -->
+                        <div class="rooms-search__wrapper-select">
+                            <input class="rooms-search__input" type="date">
+                        </div>
+                    </div>
+                    <div class="rooms-search_width-15rem">
+                        <p class="mb_5px">выезд</p>
+                        <div class="rooms-search__wrapper-select">
+                            <input class="rooms-search__input" type="date">
+                        </div>
                     </div>
                 </div>
-                <div class="rooms-search_width-15rem">
-                    <p>выезд</p>
-                    <div class="rooms-search__wrapper-select">
-                        <input class="rooms-search__input" type="date">
-                    </div>
-                </div>
-            </div>
-                <p>гости</p>
-                <div class="rooms-search__wrapper-select">
+                <p class="mb_5px">гости</p>
+                <div class="rooms-search__wrapper-select mb_31px">
                     <select class="rooms-search__input rooms-search__select" name="amountOfGuests">
                         <option value="">Сколько гостей</option>
                         <option value="">1</option>
@@ -37,7 +38,98 @@
                         <option value="">4</option>
                     </select>
                 </div>
-            <button class="rooms-search__button"><span class="rooms-search__button-text">подобрать номер</span></button>
+                <button class="rooms-search__button">
+                    <span class="rooms-search__button-text">подобрать номер</span>
+                </button>
+            </div>
+
+            <div class="wrapper__column1_row1">
+                <h1 class="mb_22px">Регистрация аккаунта</h1>
+                <input class="rooms-search__input tt_none mb_10px" type="text" placeholder="Имя">
+                <input class="rooms-search__input tt_none mb_10px" type="text" placeholder="Фамилия">
+                <div class="registration__radio-wrapper mb_24px">
+                    <label class="registration__radio-button">
+                        <input class="registration__radio" type="radio" name="gender" checked>
+                        <span class="registration__fake-input"></span>
+                        <span class="text-fs14 tt_none ml_10px">Мужчина</span>
+                    </label>
+                    <label class="registration__radio-button ml_20px">
+                        <input class="registration__radio" type="radio" name="gender">
+                        <span class="registration__fake-input"></span>
+                        <span class="text-fs14 tt_none ml_10px">Женщина</span>
+                    </label>
+                </div>
+                <p class="mb_5px">дата рождения</p>
+                <input class="rooms-search__input mb_23px" type="date">
+                <p class="mb_5px">данные для входа в сервис</p>
+                <input class="rooms-search__input tt_none mb_10px" type="email" placeholder="Email">
+                <input class="rooms-search__input tt_none mb_10px" type="password" placeholder="Пароль">
+                <label class="registration__radio-button mb_24px">
+                    <input class="registration__radio" type="checkbox" name="special offers">
+                    <span class="registration__toggle"></span>
+                    <span class="text-fs14 tt_none lh_20px ml_10px">Получать спецпредложения</span>
+                </label>
+                <button class="rooms-search__button mb_30px">
+                    <span class="rooms-search__button-text">перейти к оплате</span>
+                </button>
+                <div class="registration__wrapper-button-href">
+                    <a href="#"><p class="text-fs14 tt_none lh_18px text-fs14_black">Уже есть аккаунт на Toxin</p></a>
+                    <button class="registration__button registration__button_padding">
+                        <div class="registration__button_inside">
+                            <span class="registration__text_BC9CFF">click me</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrapper__column1">
+            <div class="wrapper__column1_row1">
+                <div class="wrapper__text mb_20px">
+                    <div class="wrapper__text_small">
+                        <p class="check__text-fs14 lh_17px">№</p>
+                        <h1>888</h1>
+                        <p class="registration__text_BC9CFF">люкс</p>
+                    </div>
+                    <div class="wrapper__text_small">
+                        <p>9 990₽</p>
+                        <p class="text-fs6">в сутки</p>
+                    </div>
+                </div>
+                <div class="rooms-search__wrapper-2inputs mb_20px">
+                    <div class="rooms-search_width-15rem">
+                        <p class="mb_5px">прибытие</p>
+                        <!-- div нужен для создания after, так как у input after не создашь -->
+                        <div class="rooms-search__wrapper-select">
+                            <input class="rooms-search__input" type="date">
+                        </div>
+                    </div>
+                    <div class="rooms-search_width-15rem">
+                        <p class="mb_5px">выезд</p>
+                        <div class="rooms-search__wrapper-select">
+                            <input class="rooms-search__input" type="date">
+                        </div>
+                    </div>
+                </div>
+                <p class="mb_5px">гости</p>
+                <div class="rooms-search__wrapper-select mb_31px">
+                    <select class="rooms-search__input rooms-search__select" name="amountOfGuests">
+                        <option value="">1 гость</option>
+                        <option value="">2 гостя</option>
+                        <option value="">3 гостя</option>
+                        <option value="">4 гостя</option>
+                    </select>
+                </div>
+                <div class="wrapper__text">
+                    <p class="text-fs14 tt_none">9 990₽ х 4 суток</p>
+                    <p class="text-fs14 tt_none">39 960₽</p>
+                </div>
+                <div class="wrapper__text">
+                    <p class="text-fs14 tt_none">Сбор за услуги: скидка 2 179₽</p>
+                    <p class="text-fs14 tt_none">0₽</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
