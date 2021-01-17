@@ -25,7 +25,7 @@ ul {
 }
 button {
     font: inherit;
-    background: #FFFFFF;
+    background: transparent;
     padding: 0;
     border: none;
 }
@@ -41,9 +41,6 @@ a {
     margin-top: 14.3rem;
     margin-left: 14rem;
 }
-
-
-
 .wrapper__first-row_column1 {
     width: 32rem;
 }
@@ -226,7 +223,7 @@ a {
     color: rgba(31, 32, 65, 0.5);
 }
 
-/* когда используем display: none отпраятся ли данные на сервер? */
+/* когда используем display: none отправятся ли данные на сервер? */
 .checkbox-button__input {
     display: none;
 }
@@ -265,7 +262,6 @@ a {
 }
 .checkbox-button__fake-input_radio {
     border-radius: 50%;
-
 }
 .checkbox-button__fake-input_radio::before {
     margin-left: -0.6rem;
@@ -408,6 +404,22 @@ a {
 .button_linear-gradient {
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
+.button_padding {
+    padding: 0.2rem;
+}
+.button_opacity050 {
+    opacity: 0.5;
+}
+.button_inside {
+    width: 9.5rem;
+    height: 4rem;
+    border-radius: 2.2rem;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .button__text {
     font-weight: 700;
     color: #FFFFFF;
@@ -418,12 +430,6 @@ a {
 }
 .button__text_BC9CFF {
     color: #BC9CFF;
-}
-.button_border-BC9CFF {
-    border: 0.2rem solid #BC9CFF;
-}
-.button_transparent-border {
-    border: 0.2rem solid rgba(188, 156, 255, 0.5);
 }
 .button__text_1f204180 {
     color: #1f204180;

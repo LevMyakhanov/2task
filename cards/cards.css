@@ -7,33 +7,6 @@ html {
 }
 body {
     margin: 0;
-    font-family: "Montserrat", sans-serif, Helvetica;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #1f2041;
-    text-transform: uppercase;
-    line-height: 1.5rem;
-    border-radius: 0.4rem;
-    outline: none;
-    padding: 0 1.5rem;
-}
-h1 {
-    font-size: 2.4rem;
-    line-height: 2.9rem;
-    text-transform: none;
-    margin: 0;
-}
-h2 {
-    font-size: 1.9rem;
-    line-height: 2.4rem;
-    text-transform: none;
-    margin: 0;
-}
-h3 {
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    margin: 0;
 }
 p, ul {
     margin: 0;
@@ -42,9 +15,13 @@ ul {
     padding: 0;
     list-style: none;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 button {
     font: inherit;
-    background: #FFFFFF;
+    background: transparent;
     padding: 0;
     border: none;
 }
@@ -53,6 +30,75 @@ a {
     color: inherit;
 }
 
+
+.text {
+    font-family: "Montserrat", sans-serif, Helvetica;
+    font-size: 1.2rem;
+    color: #1f2041;
+    line-height: 1.5rem;
+    /* во всех браузерах по умолчанию font-weight: 400, font-style: normal */
+}
+.text-b {
+    font-family: "Montserrat", sans-serif, Helvetica;
+    font-size: 1.4rem;
+    color: #1f2041;
+    line-height: 1.8rem;
+}
+
+.text_fs14 {
+    font-size: 1.4rem;
+}
+.text_fs24 {
+    font-size: 2.4rem;
+}
+
+
+
+.text_lh17 {
+    line-height: 1.7rem;
+}
+.text_lh18 {
+    line-height: 1.8rem;
+}
+.text_lh29 {
+    line-height: 2.9rem;
+}
+.text_lh20 {
+    line-height: 2rem;
+}
+.text_lh22 {
+    line-height: 2.2rem;
+}
+
+
+.text_bold {
+    font-weight: 700;
+}
+.text_ttu {
+    text-transform: uppercase;
+}
+.text_ttn {
+    text-transform: none;
+}
+
+.text_BC9CFF {
+    color: #BC9CFF;
+}
+.text_1F2041-05 {
+    color: rgba(31, 32, 65, 0.5);
+}
+.text_1F2041-075 {
+    color: rgba(31, 32, 65, 0.75);
+}
+.text_1F2041-025 {
+    color: rgba(31, 32, 65, 0.25);
+}
+.text_FFF {
+    color: #FFF;
+}
+.text_000 {
+    color: #000;
+}
 
 .mb_22px {
     /* нижний отступ 2.2rem, а не 2.1, так как line-height двух строчек получается 5.8rem,
@@ -95,6 +141,9 @@ a {
 .mb_8px {
     margin-bottom: 0.8rem;
 }
+.mb_26px {
+    margin-bottom: 2.2rem;
+}
 
 
 .ml_20px {
@@ -108,6 +157,9 @@ a {
 }
 .ml_40px {
     margin-left: 4rem;
+}
+.ml_4px {
+    margin-left: 0.4rem;
 }
 
 
@@ -124,6 +176,7 @@ a {
 .lh_22px {
     line-height: 2.2rem;
 }
+
 
 
 .cards {
@@ -183,6 +236,7 @@ a {
 }
 .rooms-search__input::placeholder {
     color: rgba(31, 32, 65, 0.25);
+    text-transform: none;
 }
 /* здесь получилось избежать использования класса field__input-hidden */
 .rooms-search__input::-webkit-calendar-picker-indicator {
@@ -191,15 +245,6 @@ a {
 .rooms-search__select {
     appearance: none;
     text-transform: none;
-}
-.rooms-search__button-text {
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
 }
 .rooms-search__button {
     width: 32rem;
@@ -221,7 +266,10 @@ a {
     background-position: center;
 }
 
-
+.booking__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
 .registration__radio-wrapper {
     display: flex;
 }
@@ -257,7 +305,7 @@ a {
 .registration__radio:checked + .registration__fake-input::before {
     display: block;
 }
-.registration__radio:checked ~ .registration__text {
+.registration__radio:checked ~ .text-b {
     color: rgba(31, 32, 65, 0.75);
 }
 .registration__toggle {
@@ -330,11 +378,7 @@ a {
     align-items: center;
     justify-content: center;
 }
-.registration__text_BC9CFF {
-    font-weight: 700;
-    color: #BC9CFF;
-    text-transform: uppercase;
-}
+
 .registration__href-text {
     font-weight: 400;
     font-size: 1.4rem;
@@ -343,21 +387,11 @@ a {
     text-transform: none;
 }
 
-.tt_none {
-    text-transform: none;
-}
+
 .wrapper__text {
     display: flex;
     justify-content: space-between;
-}
-.wrapper__text_small {
-    height: 3rem;
-    display: flex;
     align-items: flex-end;
-}
-.text-fs6 {
-    font-size: 0.6rem;
-    line-height: 1rem;
 }
 .check__wrapper {
     display: flex;
@@ -425,56 +459,54 @@ a {
 .room__back-img {
     width: 27rem;
     height: 15rem;
-    background-image: url(img/icons/image.jpg);
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
-.room__back-img_side {
+.room__back-img img {
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+}
+.room__button {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);;
     width: 4.2rem;
-    height: 15.1rem;
+    height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    outline: none;
 }
-.room_left-arrow {
-    width: 4.2rem;
-    height: 4.2rem;
-    position: relative;
-    
+.room__button_right {
+    right: 0;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
-.room__button_left::after, .room__button_right::after {
+.room__button::after {
     content: "";
     position: absolute;
-    top: 50%;
-    margin-top: -0.65rem;
-    display: block;
     width: 0.9rem;
     height: 0.9rem;
     border: 0.2rem solid #FFF;
     border-left: 0;
     border-top: 0;
     pointer-events: none;
-}
-.room__button_left::after {
     transform: rotateZ(135deg);
-    left: 2rem;
-}
-.room__button_right::after {
-    transform: rotateZ(315deg);
-    right: 2rem;
 }
 .room__rounds-wrapper {
-    width: 3.7rem;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
     height: 0.7rem;
     display: flex;
     justify-content: space-between;
 }
-.room__image {
+.room__image-scroll {
     height: 0.7rem;
     width: 0.7rem;
     border-radius: 50%;
     border: 1px solid #FFF;
 }
-.room__image:active {
+.room__image-scroll_active {
     background-color: #FFF;
 }
 .room__wrapper_text {

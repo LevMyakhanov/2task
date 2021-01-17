@@ -1,0 +1,124 @@
+html {
+    font-size:  10px;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif, Helvetica;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #1f2041;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    border-radius: 0.4rem;
+    outline: none;
+    padding: 0 1.5rem;
+}
+h1 {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    text-transform: none;
+    margin: 0;
+}
+h2 {
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    text-transform: none;
+    margin: 0;
+}
+h3 {
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin: 0;
+}
+p, ul {
+    margin: 0;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+button {
+    font: inherit;
+    background: #FFFFFF;
+    padding: 0;
+    border: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.header1__wrapper {
+    width: 144rem;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header1__wrapper-select {
+    position: relative;
+    width: 7.4rem;
+}
+.header1__wrapper-select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -0.65rem;
+    right: 0.6rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    border: 0.2rem solid rgba(31, 32, 65, 0.5);
+    border-left: 0;
+    border-top: 0;
+    transform: rotateZ(45deg);
+    pointer-events: none;
+}
+.logo {
+    width: 10.5rem;
+    height: 4rem;
+}
+
+.has-dropdown {
+    position: relative;
+}
+
+
+.submenu {
+    display: none;
+    position: absolute;
+}
+.has-dropdown:hover > .submenu {
+    display: block;
+}
+.header1__select {
+    appearance: none;
+    border: none;
+}
+.header1__enter-button {
+    width: 8,7rem;
+    height: 3.4rem;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 2.2rem;
+    padding: 0.2rem;
+}
+.header1__enter-button_inside {
+    width: 8.3rem;
+    height: 3rem;
+    border-radius: 2.2rem;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rooms-search__registration-button {
+    width: 19.6rem;
+    height: 3.4rem;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 2.2rem;
+}
