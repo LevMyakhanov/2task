@@ -1,7 +1,3 @@
-:root {
-    --main-font:#1f2041;
-}
-
 html {
     font-size:  10px;
 }
@@ -11,10 +7,11 @@ html {
 }
 body {
     margin: 0;
-    font-family: "Montserrat", sans-serif, Helvetica;
-    font-size: 1.2rem;
-    color: var(--main-font);
-    line-height: 1.5rem;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
 }
 p, ul {
     margin: 0;
@@ -34,107 +31,174 @@ a {
     color: inherit;
 }
 
-.wrapper__first-row {
+.text {
+    font-family: "Montserrat", sans-serif, Helvetica;
+    font-size: 1.2rem;
+    color: #1f2041;
+    line-height: 1.5rem;
+    /* во всех браузерах по умолчанию font-weight: 400, font-style: normal */
+}
+.text-b {
+    font-family: "Montserrat", sans-serif, Helvetica;
+    font-size: 1.4rem;
+    color: #1f2041;
+    line-height: 1.8rem;
+}
+
+.text_fs14 {
+    font-size: 1.4rem;
+}
+.text_fs24 {
+    font-size: 2.4rem;
+}
+
+
+.text_lh17 {
+    line-height: 1.7rem;
+}
+.text_lh18 {
+    line-height: 1.8rem;
+}
+.text_lh29 {
+    line-height: 2.9rem;
+}
+.text_lh20 {
+    line-height: 2rem;
+}
+.text_lh22 {
+    line-height: 2.2rem;
+}
+.text_lh14 {
+    line-height: 1.4rem;
+}
+
+
+.text_bold {
+    font-weight: 700;
+}
+.text_ttu {
+    text-transform: uppercase;
+}
+.text_ttn {
+    text-transform: none;
+}
+
+
+.text_BC9CFF {
+    color: #BC9CFF;
+}
+.text_1F2041-05 {
+    color: rgba(31, 32, 65, 0.5);
+}
+.text_1F2041-075 {
+    color: rgba(31, 32, 65, 0.75);
+}
+.text_1F2041-025 {
+    color: rgba(31, 32, 65, 0.25);
+}
+.text_FFF {
+    color: #FFF;
+}
+.text_000 {
+    color: #000;
+}
+
+.text_right {
+    float: right;
+}
+
+.display_b {
+    display: block;
+}
+.display_i-b {
+    display: inline-block;
+}
+
+/* убирает невидимый пробел между псевдоклассом и текстом,
+также можно убрать через запись спанов в одну строку без пробелов */
+.display_f {
     display: flex;
-    /* width: 115.9rem; */
-    /* height: 63.6rem; */
+}
+
+.block_mt-3px {
+    margin-top: -0.3rem;
+}
+
+.block_mb20px {
+    margin-bottom: 2rem;
+}
+.block_mb22px {
+    margin-bottom: 2.2rem;
+}
+.block_mb40px {
+    margin-bottom: 4rem;
+}
+.block_mb41px {
+    margin-bottom: 4.1rem;
+}
+.block_mb5px {
+    margin-bottom: 0.5rem;
+}
+.block_mb16px {
+    margin-bottom: 1.6rem;
+}
+.block_mb10px {
+    margin-bottom: 1rem;
+}
+.block_mb14px {
+    margin-bottom: 1.4rem;
+}
+.block_mb30px {
+    margin-bottom: 3rem;
+}
+.block_mb31px {
+    margin-bottom: 3.1rem;
+}
+.block_mb46px {
+    margin-bottom: 4.6rem;
+}
+.block_mb7px {
+    margin-bottom: 0.7rem;
+}
+.block_mb19px {
+    margin-bottom: 1.9rem;
+}
+.block_mb17px {
+    margin-bottom: 1.7rem;
+}
+.block_mb8px {
+    margin-bottom: 0.8rem;
+}
+.block_mb15px {
+    margin-bottom: 1.5rem;
+}
+
+.block_ml223px {
+    margin-left: 22.3rem;
+}
+.block_ml10px {
+    margin-left: 1rem;
+}
+.block_ml20px {
+    margin-left: 2rem;
+}
+.block_ml19px {
+    margin-left: 1.9rem;
+}
+.block_ml30px {
+    margin-left: 3rem;
+}
+.block_ml14px {
+    margin-left: 1.4rem;
+}
+
+.wrapper__row1 {
+    display: flex;
     margin-top: 14.3rem;
     margin-left: 14rem;
 }
-.wrapper__first-row_column1 {
+.wrapper__row1_column1 {
     width: 32rem;
-}
-.field {
-    display: block;
-}
-.field__text {
-    display: block;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.field__margin_2044rem {
-    margin-bottom: 2.044rem;
-}
-.field__margin_2000rem {
-    margin-bottom: 2rem;
-}
-.field__margin_2256rem {
-    margin-bottom: 2.256rem;
-}
-.field__margin_4000rem {
-    margin-bottom: 4rem;
-}
-.field__margin_4056rem {
-    margin-bottom: 4.056rem;
-}
-.field__margin_4100rem {
-    margin-bottom: 4.1rem;
-}
-.field__margin_0500rem {
-    margin-bottom: 0.5rem;
-}
-.field__margin_0544rem {
-    margin-bottom: 0.544rem;
-}
-.field__margin_-0300rem {
-    margin-top: -0.3rem;
-}
-.field__margin_0800rem {
-    margin-bottom: 0.8rem;
-}
-.checkbox-button__margin_1656 {
-    margin-bottom: 1.656rem;
-}
-.checkbox-button__margin_1600 {
-    margin-bottom: 1.6rem;
-}
-.checkbox-button__margin_1056 {
-    margin-bottom: 1.056rem;
-}
-.checkbox-button__margin_1000 {
-    margin-bottom: 1rem;
-}
-.checkbox-button__margin_4088 {
-    margin-bottom: 4.088rem;
-}
-.checkbox-button__margin_4056 {
-    margin-bottom: 4.056rem;
-}
-.checkbox-button__margin_1400 {
-    margin-bottom: 1.4rem;
-}
-.checkbox-button__margin_4444 {
-    margin-bottom: 4.444rem;
-}
-.checkbox-button__margin-left_3000 {
-    margin-left: 3rem;
-}
-.button_margin-left_1900 {
-    margin-left: 1.9rem;
-}
-.button__margin_3000 {
-    margin-bottom: 3rem;
-}
-.button_margin-left_2000 {
-    margin-left: 2rem;
-}
-.button__margin_3100 {
-    margin-bottom: 3.1rem;
-}
-.button__margin_3044 {
-    margin-bottom: 3.044rem;
-}
-.button__margin_1644 {
-    margin-bottom: 1.644rem;
-}
-.table__margin_0456rem {
-    margin-bottom: 0.456rem;
-}
-.list__margin_1744 {
-    margin-bottom: 1.744rem;
-}
-.list__margin_1500 {
-    margin-bottom: 1.5rem;
 }
 .field__input {
     font: inherit;
@@ -157,11 +221,6 @@ a {
 }
 .field__input:hover, .field__input:focus {
     border: 1px solid rgba(31, 32, 65, 0.5);
-}
-.field__text_side {
-    font-weight: 400;
-    opacity: 0.5;
-    float: right;
 }
 .field__select {
     appearance: none;
@@ -203,30 +262,13 @@ a {
     width: 4.4rem;
     height: 4.4rem;
 }
-.field_margin-left {
-    margin-left: 22.3rem;
-}
 
-.wrapper__first-row_column2 {
+
+.wrapper__row1_column2 {
     margin-left: 12.6rem;
     width: 26rem;
 }
-/* убирает невидимый пробел между псевдоклассом и текстом, также можно убрать через запись спанов в одну строку без пробелов */
-.checkbox-button {
-    display: flex;
-    /* font-size: 0; */
-}
-.checkbox-button__text {
-    font-size: 14px;
-    line-height: 1.8rem;
-    margin-left: 1rem;
-    color: rgba(31, 32, 65, 0.5);
-}
 
-/* когда используем display: none отправятся ли данные на сервер? */
-.checkbox-button__input {
-    display: none;
-}
 .checkbox-button__fake-input {
     position: relative;
     width: 2rem;
@@ -254,23 +296,23 @@ a {
     margin-top: -0.8rem;
     background: #FFFFFF;
 }
-.checkbox-button__input:checked + .checkbox-button__fake-input {
+.display_n:checked + .checkbox-button__fake-input {
     border: 1px solid #BC9CFF;
 }
-.checkbox-button__input:checked + .checkbox-button__fake-input::before {
+.display_n:checked + .checkbox-button__fake-input::before {
     display: block;
 }
-.checkbox-button__fake-input_radio {
+.checkbox-button__radio {
     border-radius: 50%;
 }
-.checkbox-button__fake-input_radio::before {
+.checkbox-button__radio::before {
     margin-left: -0.6rem;
     margin-top: -0.6rem;
     height: 1.2rem;
     width: 1.2rem;
     border-radius: 50%;
 }
-.checkbox-button__fake-input_radio::after {
+.checkbox-button__radio::after {
     display: none;
 }
 .checkbox-button__radio-wrapper {
@@ -278,13 +320,13 @@ a {
     justify-content: space-between;
     width: 22.074rem;
 }
-.checkbox-button__input:checked + .checkbox-button__radio-input {
+.display_n:checked + .checkbox-button__radio {
     border: 1px solid #BC9CFF;
 }
-.checkbox-button__input:checked ~ .checkbox-button__text_radio {
+.display_n:checked ~ .text-b {
     color: rgba(31, 32, 65, 0.75);
 }
-.checkbox-button__input:checked + .checkbox-button__radio-input::before {
+.display_n:checked + .checkbox-button__radio::before {
     display: block;
 }
 .checkbox-button__fake-input-toggle {
@@ -317,21 +359,14 @@ a {
     border-radius: 50%;
     background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
-.checkbox-button__text_opacity075 {
-    color: rgba(31, 32, 65, 0.75);
-}
-.checkbox-button__input:checked + .checkbox-button__fake-input-toggle {
+.display_n:checked + .checkbox-button__fake-input-toggle {
     border: 1px solid #BC9CFF;
 }
-.checkbox-button__input:checked + .checkbox-button__fake-input-toggle::before {
+.display_n:checked + .checkbox-button__fake-input-toggle::before {
     display: none;
 }
-.checkbox-button__input:checked + .checkbox-button__fake-input-toggle::after {
+.display_n:checked + .checkbox-button__fake-input-toggle::after {
     display: block;
-}
-.button-like-button-wrapper {
-    display: flex;
-    margin-bottom: 4rem;
 }
 .button-like {
     display: flex;
@@ -358,23 +393,8 @@ a {
 .button-like_pressed {
     border-color: #BC9CFF;
 }
-.button-like__margin_left {
-    margin-left: 1rem;
-}
 .button-like_pressed .button-like__text {
     color: #BC9CFF;
-}
-/* .button__text_pressed {
-    color: #BC9CFF;
-} */
-.button__star-greater-wrapper {
-    display: flex;
-}
-.button__star-wrapper {
-    display: flex;
-}
-.button__star-margin_left {
-    margin-left: 2rem;
 }
 .button__star {
     width: 2.4rem;
@@ -384,16 +404,13 @@ a {
     border: none;
 }
 
-.wrapper__first-row_column3 {
+.wrapper__row1_column3 {
     margin-left: 13.2rem;
 }
 
 .interim__wrapper {
     width: 26.6rem;
-    height: 4.744rem;
-}
-.button__wrapper-2buttons {
-    display: flex;
+    height: 4.7rem;
 }
 .button {
     width: 9.9rem;
@@ -403,6 +420,9 @@ a {
 }
 .button_linear-gradient {
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.button_linear-gradient_op05 {
+    background: linear-gradient(180deg, rgba(188,156,255,0.5) 0%, rgba(139,164,249,0.5) 100%);
 }
 .button_padding {
     padding: 0.2rem;
@@ -419,20 +439,8 @@ a {
     align-items: center;
     justify-content: center;
 }
-
-.button__text {
-    font-weight: 700;
-    color: #FFFFFF;
-    text-transform: uppercase;
-}
 .button_opacity {
     opacity: 0.5;
-}
-.button__text_BC9CFF {
-    color: #BC9CFF;
-}
-.button__text_1f204180 {
-    color: #1f204180;
 }
 .button_long {
     width: 32rem;
@@ -450,12 +458,6 @@ a {
     background-image: url("img/icons/arrow_forward_white.png");
     background-repeat: no-repeat;
     background-position: center;
-}
-.button_margin-left {
-    margin-left: 27.6rem;
-}
-.button__wrapper-href {
-    display: flex;
 }
 .pagination__href_active {
     display: flex;
@@ -484,27 +486,24 @@ a {
     border-radius: 50%;
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 }
-.d-none {
+/* если display_n поднять выше не работает */
+.display_n {
     display: none;
 }
 
-
-.wrapper__second-row {
+.wrapper__row2 {
     display: flex;
     margin-top: 10rem;
     margin-left: 14rem;
     margin-bottom: 5.444rem;
 }
-.wrapper__second-row__column1 {
+.wrapper__row2_column1 {
     width: 26.6rem;
 }
-.field__input_square-angles {
+.field_square-angles {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     appearance: none;
-}
-.table__margin0700 {
-    margin-bottom: 0.7rem;
 }
 .table__select {
     width: 100%;
@@ -535,7 +534,7 @@ a {
     width: 26.6rem;
     height: 11.9rem;
 }
-.table__text-button {
+.table_flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -564,38 +563,18 @@ a {
     border: 1px solid rgba(31, 32, 65, 0.25);
     color: rgba(31, 32, 65, 0.25);
 }
-.table__button-apply {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #BC9CFF;
-    float: right;
-}
-.table__margin_1900 {
-    margin-bottom: 1.9rem;
-}
 .table__wrapper-column3 {
     width: 32rem;
     margin-left: 7.2rem;
 }
-.table__button-clear {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #BC9CFF;
-}
 
 
-.wrapper__third-row {
+.wrapper__row3 {
     margin-left: 14rem;
     display: flex;
     margin-bottom: 10.2rem;
 }
-.wrapper__third-row_column1 {
+.wrapper__row3_column1 {
     width: 26.6rem;
 }
 .expandable-list {
@@ -621,19 +600,9 @@ a {
     justify-content: space-between;
     height: 17rem;
 }
-.wrapper__third-row_column2 {
+.wrapper__row3_column2 {
     width: 26.6rem;
     margin-left: 18rem;
-}
-.checkbox-button__text_bold {
-    font-weight: bold;
-}
-.checkbox-button__text_fs12 {
-    font-family: Montserrat;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    color: rgba(31, 32, 65, 0.5);
 }
 .wrapper__third-row_column3 {
     width: 29.2rem;
@@ -656,7 +625,7 @@ a {
     background: rgba(31, 32, 65, 0.25);
     margin-top: 0.4rem;
 }
-.wrapper__fourth-row {
+.wrapper__row4 {
     margin-left: 14rem;
     margin-bottom: 13.1rem;
     display: flex;
@@ -676,10 +645,6 @@ a {
     justify-content: center;
     align-items: center;
 }
-.advantages__text {
-    margin-bottom: 0.8rem;
-    display: block;
-}
 .advantages_padding-down {
     padding-top: 2rem;
 }
@@ -687,10 +652,4 @@ a {
     width: 71.1rem;
     margin-top: 1rem;
     margin-left: 15.6rem;
-}
-.comments {
-    display: flex;
-}
-.comments__margin-left {
-    margin-left: 1.413rem;
 }

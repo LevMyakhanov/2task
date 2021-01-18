@@ -9,19 +9,21 @@
     <link rel="stylesheet" href="formAndElements.css">
 </head>
 <body>
-    <div class="wrapper__first-row">
+    <div class="wrapper__row1">
 
-        <div class="wrapper__first-row_column1">
-            <label class="field field__margin_2044rem">
-                <span class="field__text field__margin_0500rem">text field <span class="field__text_side field__margin_-0300rem">Default</span></span>
+        <div class="wrapper__row1_column1">
+            <label class="display_b block_mb20px">
+                <span class="display_i-b text text_bold text_ttu block_mb5px">text field</span>
+                <span class="display_i-b text text_ttu text_1F2041-05 text_right block_mt-3px">Default</span>
                 <input class="field__input" type="email" name="email" placeholder="Email">
             </label>
-            <label class="field field__margin_2000rem">
-                <span class="field__text field__margin_0500rem">text field <span class="field__text_side field__margin_0544rem">Hover / Focus</span></span>
+            <label class="display_b block_mb20px">
+                <span class="display_i-b text text_bold text_ttu block_mb5px">text field</span>
+                <span class="display_i-b text text_ttu text_1F2041-05 text_right block_mb5px">Hover / Focus</span>
                 <input class="field__input" type="text" name="text" value="This is pretty awesome">
             </label>
-            <label class="field field__margin_2256rem">
-                <span class="field__text field__margin_0500rem">Dropdown</span>
+            <label class="display_b block_mb22px">
+                <span class="display_b text text_bold text_ttu block_mb5px">Dropdown</span>
                 <span class="field__wrapper-select">
                     <select class="field__input field__select" name="amount of guests">
                         <option value="Сколько гостей">Сколько гостей</option>
@@ -32,28 +34,29 @@
                     </select>
                 </span>
             </label>
-            <label class="field field__margin_4000rem">
-                <p class="field__text field__margin_0500rem">masked text field</p>
+            <label class="display_b block_mb40px">
+                <span class="display_b text text_bold text_ttu block_mb5px">masked text field</span>
                 <input class="field__input field__input-hidden" type="date" name="masked text field">
             </label>
-            <div class="field__wrapper-2inputs field__margin_4056rem">
-                <label class="field field__width_15rem">
-                    <p class="field__text field__margin_0544rem">date Dropdown</p>
-                    <div class="field__wrapper-select">
+            <div class="field__wrapper-2inputs block_mb40px">
+                <label class="display_b field__width_15rem">
+                    <span class="display_b text text_bold text_ttu block_mb5px">date Dropdown</span>
+                    <span class="display_b field__wrapper-select">
                         <input class="field__input field__input-hidden" type="date" name="date_dropdown1">
-                    </div>
+                    </span>
                 </label>
-                <label class="field field__width_15rem">
-                    <p class="field__text field__margin_0544rem">date Dropdown</p>
-                    <div class="field__wrapper-select">
+                <label class="display_b field__width_15rem">
+                    <span class="display_b text text_bold text_ttu block_mb5px">date Dropdown</span>
+                    <span class="display_b field__wrapper-select">
                         <input class="field__input field__input-hidden" type="date" name="date_dropdown2">
-                    </div>
+                    </span>
                 </label>
             </div>
-            <label class="field field__width_26rem field__margin_4100rem">
-                <p class="field__text field__margin_0500rem">filter date Dropdown</p>
+            <label class="display_b field__width_26rem block_mb41px">
+                <span class="display_b text text_bold text_ttu block_mb5px">filter date Dropdown</span>
                 <!-- как выставить две даты в поле 19 авг-23 авг -->
                 <div class="field__wrapper-select">
+                    <!-- select нельзя в label, что делать? -->
                     <select class="field__input field__select">
                         <option value="Сколько гостей">19 авг - 23 авг</option>
                         <option value="Сколько гостей">1</option>
@@ -61,79 +64,78 @@
                     </select>
                 </div>
             </label>
-            <label class="field field__width_26rem">
-                <p class="field__text field__margin_0500rem">subscription text field</p>
+            <label class="display_b field__width_26rem">
+                <span class="display_b text text_bold text_ttu block_mb5px">subscription text field</span>
                 <input class="field__input" type="email" name="subscription text field" placeholder="Email">
-                <div class="field__href field_margin-left">
+                <span class="display_b field__href block_ml223px">
                     <a href="https://www.google.com/"><img src="img/icons/arrow_forward_violet.png" alt="img"></a>
-                </div>
+                </span>
             </label>
         </div>
 
-        <div class="wrapper__first-row_column2">
-            <!-- как убрать расстояние между ::before элементами-->
-            <p class="field__text checkbox-button__margin_1656">Checkbox Buttons</p>
-            <label class="checkbox-button checkbox-button__margin_1056">
-                <input class="checkbox-button__input" type="checkbox" name="smoking">
+        <div class="wrapper__row1_column2">
+            <p class="text text_bold text_ttu block_mb16px">Checkbox Buttons</p>
+            <label class="display_f block_mb10px">
+                <input class="display_n" type="checkbox" name="smoking">
                 <span class="checkbox-button__fake-input"></span>
-                <span class="checkbox-button__text">Можно курить</span>
+                <span class="text-b text_lh20 text_1F2041-05 block_ml10px">Можно курить</span>
             </label>
-            <label class="checkbox-button checkbox-button__margin_1000">
-                <input class="checkbox-button__input" type="checkbox" name="pets" checked>
+            <label class="display_f block_mb10px">
+                <input class="display_n" type="checkbox" name="pets" checked>
                 <span class="checkbox-button__fake-input"></span>
-                <span class="checkbox-button__text">Можно с питомцами</span>
+                <span class="text-b text_lh20 text_1F2041-05 block_ml10px">Можно с питомцами</span>
             </label>
-            <label class="checkbox-button checkbox-button__margin_4088">
-                <input class="checkbox-button__input" type="checkbox" name="guests" checked>
+            <label class="display_f block_mb40px">
+                <input class="display_n" type="checkbox" name="guests" checked>
                 <span class="checkbox-button__fake-input"></span>
-                <span class="checkbox-button__text">Можно пригласить гостей <br>(до 10 человек)</span>
+                <span class="text-b text_1F2041-05 block_ml10px">Можно пригласить гостей <br>(до 10 человек)</span>
             </label>
-            <p class="field__text checkbox-button__margin_1600">Radio Buttons</p>
-            <div class="checkbox-button__radio-wrapper checkbox-button__margin_4056">
-                <label class="checkbox-button">
-                    <input class="checkbox-button__input" type="radio" name="gender" checked>
-                    <span class="checkbox-button__fake-input checkbox-button__fake-input_radio"></span>
-                    <span class="checkbox-button__text checkbox-button__text_radio">Мужчина</span>
+            <p class="text text_bold text_ttu block_mb16px">Radio Buttons</p>
+            <div class="checkbox-button__radio-wrapper block_mb40px">
+                <label class="display_f">
+                    <input class="display_n" type="radio" name="gender" checked>
+                    <span class="checkbox-button__fake-input checkbox-button__radio"></span>
+                    <span class="text-b text_lh20 text_1F2041-05 block_ml10px">Мужчина</span>
                 </label>
-                <label class="checkbox-button">
-                    <input class="checkbox-button__input" type="radio" name="gender">
-                    <span class="checkbox-button__fake-input checkbox-button__fake-input_radio"></span>
-                    <span class="checkbox-button__text checkbox-button__text_radio">Женщина</span>
+                <label class="display_f">
+                    <input class="display_n" type="radio" name="gender">
+                    <span class="checkbox-button__fake-input checkbox-button__radio"></span>
+                    <span class="text-b text_lh20 text_1F2041-05 block_ml10px">Женщина</span>
                 </label>
             </div>
-            <p class="field__text checkbox-button__margin_1600">Toggle</p>
-            <label class="checkbox-button checkbox-button__margin_1400">
-                <input class="checkbox-button__input" type="checkbox" name="special offers" checked>
+            <p class="text text_bold text_ttu block_mb16px">Toggle</p>
+            <label class="display_f block_mb14px">
+                <input class="display_n" type="checkbox" name="special offers" checked>
                 <span class="checkbox-button__fake-input-toggle"></span>
-                <span class="checkbox-button__text checkbox-button__text_opacity075">Получать спецпредложения</span>
+                <span class="text-b text_lh20 text_1F2041-075 block_ml10px">Получать спецпредложения</span>
             </label>
-            <label class="checkbox-button checkbox-button__margin_4444">
-                <input class="checkbox-button__input" type="checkbox" name="special offers disabled">
+            <label class="display_f block_mb40px">
+                <input class="display_n" type="checkbox" name="special offers disabled">
                 <span class="checkbox-button__fake-input-toggle"></span>
-                <span class="checkbox-button__text checkbox-button__text_opacity075">Получать спецпредложения</span>
+                <span class="text-b text_lh20 text_1F2041-075 block_ml10px">Получать спецпредложения</span>
             </label>
-            <p class="field__text checkbox-button__margin_1600">like button</p>
+            <p class="text text_bold text_ttu block_mb16px">like button</p>
             <!-- добавил div чтобы избавиться от пробела по умолчанию между кнопками -->
-            <div class="button-like-button-wrapper">
+            <div class="display_f block_mb40px">
                 <button class="button-like">
                     <img class="button-like__heart" src="img/icons/favorite_border.png" alt="heart_unpressed">
                     <span class="button-like__text">2</span>
                 </button>
-                <button class="button-like button-like_pressed button-like__margin_left">
+                <button class="button-like button-like_pressed block_ml10px">
                     <img class="button-like__heart" src="img/icons/favorite.png" alt="heart_pressed">
                     <span class="button-like__text">12</span>
                 </button>
             </div>
-            <p class="field__text checkbox-button__margin_1600">rate button</p>
-            <div class="button__star-greater-wrapper">
-                <div class="button__star-wrapper">
+            <p class="text text_bold text_ttu block_mb16px">rate button</p>
+            <div class="display_f">
+                <div class="display_f">
                     <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
                     <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
                     <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
                     <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
                     <button class="button__star"><img src="img/icons/star_border.png" alt="star"></button>
                 </div>
-                <div class="button__star-wrapper button__star-margin_left">
+                <div class="display_f block_ml20px">
                     <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
                     <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
                     <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
@@ -143,113 +145,125 @@
             </div>
         </div>
 
-        <div class="wrapper__first-row_column3">
-            <div class="interim__wrapper checkbox-button__margin_4056">
-                <p class="field__text">Range Slider<span class="field__text_side">5 000₽ - 10 000₽</span></p>
+        <div class="wrapper__row1_column3">
+            <div class="interim__wrapper block_mb40px">
+                <span class="display_i-b text text_bold text_ttu">Range Slider</span>
+                <span class="display_i-b text text_1F2041-05 text_right">5 000₽ - 10 000₽</span>
                 <input type="range" name="Range Slider">
             </div>
-            <p class="field__text checkbox-button__margin_1600">buttons</p>
-            <div class="button__wrapper-2buttons button__margin_3000">
-                <button class="button button_linear-gradient"><span class="button__text">click me</span></button>
-                <button class="button button_linear-gradient button_opacity button_margin-left_1900"><span class="button__text">click me</span></button>
+            <p class="text text_bold text_ttu block_mb16px">buttons</p>
+            <div class="display_f block_mb30px">
+                <button class="button button_linear-gradient">
+                    <span class="text text_bold text_ttu text_FFF">click me</span>
+                </button>
+                <button class="button button_linear-gradient button_opacity block_ml19px">
+                    <span class="text text_bold text_ttu text_FFF">click me</span>
+                </button>
             </div>
-            <div class="button__wrapper-2buttons button__margin_3100">
+            <div class="display_f block_mb31px">
                 <button class="button button_linear-gradient button_padding">
                     <div class="button_inside ">
-                        <span class="button__text button__text_BC9CFF">click me</span>
+                        <span class="text text_bold text_ttu text_BC9CFF">click me</span>
                     </div>
                 </button>
-                <button class="button button_linear-gradient button_margin-left_1900 button_padding button_opacity050">
-                    <!-- как убрать opacity у текста внутри? -->
-                    <div class="button_inside ">
-                        <span class="button__text button__text_BC9CFF">click me</span>
+                <button class="button button_linear-gradient_op05 block_ml19px button_padding">
+                    <div class="button_inside">
+                        <span class="text text_bold text_ttu text_BC9CFF">click me</span>
                     </div>
                 </button>
             </div>
-            <div class="button__wrapper-2buttons button__margin_3044">
-                <button ><span class="button__text button__text_BC9CFF">click me</span></button>
-                <button class="button_margin-left_2000"><span class="button__text button__text_1f204180">click me</span></button>
+            <div class="display_f block_mb30px">
+                <button >
+                    <span class="text text_bold text_ttu text_BC9CFF">click me</span>
+                </button>
+                <button class="block_ml20px">
+                    <span class="text text_bold text_ttu text_1F2041-05">click me</span>
+                </button>
             </div>
-            <button class="button button_long field__margin_4000rem"><span class="button__text">перейти к оплате</span></button>
+            <button class="button button_long block_mb40px">
+                <span class="text text_bold text_ttu text_FFF">перейти к оплате</span>
+            </button>
 
-            <p class="field__text button__margin_1644">pagination</p>
-            <div class="pagination button__wrapper-href button__margin_1056">
+            <p class="text text_bold text_ttu block_mb16px">pagination</p>
+            <div class="display_f block_mb10px">
                 <!-- повернуть стрелку на 180 deg -->
-                <a class="pagination__href-arrow d-none" href="#"><img src="img/icons/arrow_back.png" alt=""></a>
+                <a class="pagination__href-arrow display_n" href="#"><img src="img/icons/arrow_back.png" alt=""></a>
                 <a class="pagination__href" href="#"><span class="pagination__href_active">1</span></a>
-                <a class="pagination__href" href="#"><span class="field__text_side">2</span></a>
-                <a class="pagination__href" href="#"><span class="field__text_side">3</span></a>
-                <a class="pagination__href" href="#"><span class="field__text_side">...</span></a>
-                <a class="pagination__href d-none" href="#"><span class="field__text_side">4</span></a>
-                <a class="pagination__href d-none" href="#"><span class="field__text_side">5</span></a>
-                <a class="pagination__href d-none" href="#"><span class="field__text_side">6</span></a>
-                <a class="pagination__href d-none" href="#"><span class="field__text_side">7</span></a>
-                <a class="pagination__href d-none" href="#"><span class="field__text_side">8</span></a>
-                <a class="pagination__href d-none" href="#"><span class="field__text_side">9</span></a>
-                <a class="pagination__href d-none" href="#"><span class="field__text_side">10</span></a>
-                <a class="pagination__href d-none" href="#"><span class="field__text_side">11</span></a>
-                <a class="pagination__href d-none" href="#"><span class="field__text_side">12</span></a>
-                <a class="pagination__href d-none" href="#"><span class="field__text_side">13</span></a>
-                <a class="pagination__href d-none" href="#"><span class="field__text_side">14</span></a>
-                <a class="pagination__href" href="#"><span class="field__text_side">15</span></a>
+                <a class="pagination__href" href="#"><span class="text text_ttu text_1F2041-05">2</span></a>
+                <a class="pagination__href" href="#"><span class="text text_ttu text_1F2041-05">3</span></a>
+                <a class="pagination__href" href="#"><span class="text text_ttu text_1F2041-05">...</span></a>
+                <a class="pagination__href display_n" href="#"><span class="text text_ttu text_1F2041-05">4</span></a>
+                <a class="pagination__href display_n" href="#"><span class="text text_ttu text_1F2041-05">5</span></a>
+                <a class="pagination__href display_n" href="#"><span class="text text_ttu text_1F2041-05">6</span></a>
+                <a class="pagination__href display_n" href="#"><span class="text text_ttu text_1F2041-05">7</span></a>
+                <a class="pagination__href display_n" href="#"><span class="text text_ttu text_1F2041-05">8</span></a>
+                <a class="pagination__href display_n" href="#"><span class="text text_ttu text_1F2041-05">9</span></a>
+                <a class="pagination__href display_n" href="#"><span class="text text_ttu text_1F2041-05">10</span></a>
+                <a class="pagination__href display_n" href="#"><span class="text text_ttu text_1F2041-05">11</span></a>
+                <a class="pagination__href display_n" href="#"><span class="text text_ttu text_1F2041-05">12</span></a>
+                <a class="pagination__href display_n" href="#"><span class="text text_ttu text_1F2041-05">13</span></a>
+                <a class="pagination__href display_n" href="#"><span class="text text_ttu text_1F2041-05">14</span></a>
+                <a class="pagination__href" href="#"><span class="text text_ttu text_1F2041-05">15</span></a>
                 <a class="pagination__href-arrow" href="#"><img src="img/icons/arrow_forward_white.png" alt=""></a>
             </div>
-            <p class="button__text button__text_opacity075">1 – 12 из 100+ вариантов аренды</p>
+            <p class="text-b text_1F2041-075">1 – 12 из 100+ вариантов аренды</p>
         </div>
     </div>
     
 
-    <div class="wrapper__second-row">
-        <div class="wrapper__second-row__column1">
-            <label class="field field__margin_2000rem">
-                <span class="field__text field__margin_0500rem">dropdown<span class="field__text_side">default</span></span>
+    <div class="wrapper__row2">
+        <div class="wrapper__row2_column1">
+            <label class="display_b block_mb20px">
+                <span class="display_i-b text text_bold text_ttu block_mb5px">dropdown</span>
+                <span class="text text_ttu text_1F2041-05 text_right block_mb5px">default</span>
                 <span class="field__wrapper-select">
-                    <select class="field__input field__input_square-angles" name="rooms&beds">
+                    <select class="field__input field_square-angles" name="rooms&beds">
                         <option value="">1room&1bed</option>
                         <option value="">1room&2beds</option>
                         <option value="">2rooms&2beds</option>
                     </select>
                 </span>
             </label>
-            <label class="field">
-                <span class="field__text table__margin_0456rem">dropdown<span class="field__text_side">expanded</span></span>
+            <label class="display_b">
+                <span class="display_i-b text text_bold text_ttu block_mb5px">dropdown</span>
+                <span class="display_i-b text text_ttu text_1F2041-05 text_right block_mb5px">expanded</span>
                 <span class="field__wrapper-select">
-                <select class="field__input field__input_square-angles table__select_border05" name="rooms&beds">
-                    <option value="">1room&1bed</option>
-                    <option value="">1room&2beds</option>
-                    <option value="">2rooms&2beds</option>
-                </select>
+                    <select class="field__input field_square-angles table__select_border05" name="rooms&beds">
+                        <option value="">1room&1bed</option>
+                        <option value="">1room&2beds</option>
+                        <option value="">2rooms&2beds</option>
+                    </select>
                 </span>
             </label>
             <div class="table__wrapper-counter table__wrapper-counter_w26-6h11-9">
-                <div class="table__text-button table__margin0700">
-                    <span class="field__text">спальни</span>
+                <div class="table_flex block_mb7px">
+                    <span class="text text_bold text_ttu">спальни</span>
                     <div>
                         <button class="table__button">-</button>
-                        <span class="field__text table__amount">2</span>
+                        <span class="text text_bold text_ttu table__amount">2</span>
                         <button class="table__button">+</button>
                     </div>
                 </div>
-                <div class="table__text-button table__margin0700">
-                    <span class="field__text">кровати</span>
+                <div class="table_flex block_mb7px">
+                    <span class="text text_bold text_ttu">кровати</span>
                     <div>
                         <button class="table__button">-</button>
-                        <span class="field__text table__amount">2</span>
+                        <span class="text text_bold text_ttu table__amount">2</span>
                         <button class="table__button">+</button>
                     </div>
                 </div>
-                <div class="table__text-button">
-                    <span class="field__text">ванные комнаты</span>
+                <div class="table_flex">
+                    <span class="text text_bold text_ttu">ванные комнаты</span>
                     <div>
                         <button class="table__button">-</button>
-                        <span class="field__text table__amount">2</span>
+                        <span class="text text_bold text_ttu table__amount">2</span>
                         <button class="table__button">+</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="table__wrapper-column2">
-            <p class="field__text table__margin_0456rem">dropdown</p>
+            <p class="text text_bold text_ttu block_mb5px">dropdown</p>
             <div class="field__wrapper-select">
                 <select class="table__select table__select_border05" name="rooms&beds">
                     <option value="">Сколько гостей</option>
@@ -259,35 +273,35 @@
                 </select>
             </div>
             <div class="table__wrapper-counter table__wrapper-counter_w320h159">
-                <div class="table__text-button table__margin0700">
-                    <span class="field__text">взрослые</span>
+                <div class="table_flex block_mb7px">
+                    <span class="text text_bold text_ttu">взрослые</span>
                     <div>
                         <button class="table__button table__button_opacity025"><span class="table__button_opacity025">-</span></button>
-                        <span class="field__text table__amount">2</span>
+                        <span class="text text_bold text_ttu table__amount">2</span>
                         <button class="table__button">+</button>
                     </div>
                 </div>
-                <div class="table__text-button table__margin0700">
-                    <span class="field__text">дети</span>
+                <div class="table_flex block_mb7px">
+                    <span class="text text_bold text_ttu">дети</span>
                     <div>
                         <button class="table__button table__button_opacity025">-</button>
-                        <span class="field__text table__amount">2</span>
+                        <span class="text text_bold text_ttu table__amount">2</span>
                         <button class="table__button">+</button>
                     </div>
                 </div>
-                <div class="table__text-button table__margin_1900">
-                    <span class="field__text">младенцы</span>
+                <div class="table_flex block_mb19px">
+                    <span class="text text_bold text_ttu">младенцы</span>
                     <div>
                         <button class="table__button table__button_opacity025">-</button>
-                        <span class="field__text table__amount">2</span>
+                        <span class="text text_bold text_ttu table__amount">2</span>
                         <button class="table__button">+</button>
                     </div>
                 </div>
-                <button class="table__button-apply">применить</button>
+                <button class="text text_bold text_ttu text_BC9CFF text_right">применить</button>
             </div>
         </div>
         <div class="table__wrapper-column3">
-            <p class="field__text table__margin_0456rem">dropdown</p>
+            <p class="text text_bold text_ttu block_mb5px">dropdown</p>
             <div class="field__wrapper-select">
                 <select class="table__select table__select_border05" name="rooms&beds">
                     <option value="">Сколько гостей</option>
@@ -297,173 +311,177 @@
                 </select>
             </div>
             <div class="table__wrapper-counter table__wrapper-counter_w320h159">
-                <div class="table__text-button table__margin0700">
-                    <span class="field__text">взрослые</span>
+                <div class="table_flex block_mb7px">
+                    <span class="text text_bold text_ttu">взрослые</span>
                     <div>
                         <button class="table__button table__button_opacity025"><span class="table__button_opacity025">-</span></button>
-                        <span class="field__text table__amount">2</span>
+                        <span class="text text_bold text_ttu table__amount">2</span>
                         <button class="table__button">+</button>
                     </div>
                 </div>
-                <div class="table__text-button table__margin0700">
-                    <span class="field__text">дети</span>
+                <div class="table_flex block_mb7px">
+                    <span class="text text_bold text_ttu">дети</span>
                     <div>
                         <button class="table__button table__button_opacity025">-</button>
-                        <span class="field__text table__amount">2</span>
+                        <span class="text text_bold text_ttu table__amount">2</span>
                         <button class="table__button">+</button>
                     </div>
                 </div>
-                <div class="table__text-button table__margin_1900">
-                    <span class="field__text">младенцы</span>
+                <div class="table_flex block_mb19px">
+                    <span class="text text_bold text_ttu">младенцы</span>
                     <div>
                         <button class="table__button table__button_opacity025">-</button>
-                        <span class="field__text table__amount">2</span>
+                        <span class="text text_bold text_ttu table__amount">2</span>
                         <button class="table__button">+</button>
                     </div>
                 </div>
-                <button class="table__button-clear">очистить</button>
-                <button class="table__button-apply">применить</button>
+                <button class="text text_bold text_ttu text_BC9CFF">очистить</button>
+                <button class="text text_bold text_ttu text_BC9CFF text_right">применить</button>
             </div>
         </div>
     </div>
     
-    <div class="wrapper__third-row">
-        <div class="wrapper__third-row_column1">
+    <div class="wrapper__row3">
+        <div class="wrapper__row3_column1">
                 <details class="expandable-list">
-                    <summary class="expandable-list__summary field__wrapper-select list__margin_1744">
-                        <span class="field__text">expandable checkbox list</span>
+                    <summary class="expandable-list__summary field__wrapper-select block_mb17px">
+                        <span class="text text_bold text_ttu">expandable checkbox list</span>
                     </summary>
                     <div class="checkbox-list">
-                        <label class="checkbox-button">
-                            <input class="checkbox-button__input" type="checkbox" name="accesouarces">
+                        <label class="display_f">
+                            <input class="display_n" type="checkbox" name="breakfast">
                             <span class="checkbox-button__fake-input"></span>
-                            <span class="checkbox-button__text">Завтрак</span>
+                            <span class="text-b block_ml10px">Завтрак</span>
                         </label>
-                        <label class="checkbox-button">
-                            <input class="checkbox-button__input" type="checkbox" name="accesouarces" checked>
+                        <label class="display_f">
+                            <input class="display_n" type="checkbox" name="desk" checked>
                             <span class="checkbox-button__fake-input"></span>
-                            <span class="checkbox-button__text">Письменный стол</span>
+                            <span class="text-b block_ml10px">Письменный стол</span>
                         </label>
-                        <label class="checkbox-button">
-                            <input class="checkbox-button__input" type="checkbox" name="accesouarces" checked>
+                        <label class="display_f">
+                            <input class="display_n" type="checkbox" name="feeding_chair" checked>
                             <span class="checkbox-button__fake-input"></span>
-                            <span class="checkbox-button__text">Стул для кормления</span>
+                            <span class="text-b block_ml10px">Стул для кормления</span>
                         </label>
-                        <label class="checkbox-button">
-                            <input class="checkbox-button__input" type="checkbox" name="accesouarces" checked>
+                        <label class="display_f">
+                            <input class="display_n" type="checkbox" name="child_bed" checked>
                             <span class="checkbox-button__fake-input"></span>
-                            <span class="checkbox-button__text">Кроватка</span>
+                            <span class="text-b block_ml10px">Кроватка</span>
                         </label>
-                        <label class="checkbox-button">
-                            <input class="checkbox-button__input" type="checkbox" name="accesouarces">
+                        <label class="display_f">
+                            <input class="display_n" type="checkbox" name="tv">
                             <span class="checkbox-button__fake-input"></span>
-                            <span class="checkbox-button__text">Телевизор</span>
+                            <span class="text-b block_ml10px">Телевизор</span>
                         </label>
-                        <label class="checkbox-button">
-                            <input class="checkbox-button__input" type="checkbox" name="accesouarces">
+                        <label class="display_f">
+                            <input class="display_n" type="checkbox" name="shampoo">
                             <span class="checkbox-button__fake-input"></span>
-                            <span class="checkbox-button__text">Шампунь</span>
+                            <span class="text-b block_ml10px">Шампунь</span>
                         </label>
                     </div>
                 </details>
                 <details class="expandable-list" open>
-                    <summary class="expandable-list__summary field__wrapper-select list__margin_1744">
-                        <span class="field__text">expandable checkbox list</span>
+                    <summary class="expandable-list__summary field__wrapper-select block_mb17px">
+                        <span class="text text_bold text_ttu">expandable checkbox list</span>
                     </summary>
                     <div class="checkbox-list">
-                        <label class="checkbox-button">
-                            <input class="checkbox-button__input" type="checkbox" name="accesouarces">
+                        <label class="display_f">
+                            <input class="display_n" type="checkbox" name="breakfast">
                             <span class="checkbox-button__fake-input"></span>
-                            <span class="checkbox-button__text">Завтрак</span>
+                            <span class="text-b block_ml10px">Завтрак</span>
                         </label>
-                        <label class="checkbox-button">
-                            <input class="checkbox-button__input" type="checkbox" name="accesouarces" checked>
+                        <label class="display_f">
+                            <input class="display_n" type="checkbox" name="desk" checked>
                             <span class="checkbox-button__fake-input"></span>
-                            <span class="checkbox-button__text">Письменный стол</span>
+                            <span class="text-b block_ml10px">Письменный стол</span>
                         </label>
-                        <label class="checkbox-button">
-                            <input class="checkbox-button__input" type="checkbox" name="accesouarces" checked>
+                        <label class="display_f">
+                            <input class="display_n" type="checkbox" name="feeding_chair" checked>
                             <span class="checkbox-button__fake-input"></span>
-                            <span class="checkbox-button__text">Стул для кормления</span>
+                            <span class="text-b block_ml10px">Стул для кормления</span>
                         </label>
-                        <label class="checkbox-button">
-                            <input class="checkbox-button__input" type="checkbox" name="accesouarces" checked>
+                        <label class="display_f">
+                            <input class="display_n" type="checkbox" name="child_bed" checked>
                             <span class="checkbox-button__fake-input"></span>
-                            <span class="checkbox-button__text">Кроватка</span>
+                            <span class="text-b block_ml10px">Кроватка</span>
                         </label>
-                        <label class="checkbox-button">
-                            <input class="checkbox-button__input" type="checkbox" name="accesouarces">
+                        <label class="display_f">
+                            <input class="display_n" type="checkbox" name="tv">
                             <span class="checkbox-button__fake-input"></span>
-                            <span class="checkbox-button__text">Телевизор</span>
+                            <span class="text-b block_ml10px">Телевизор</span>
                         </label>
-                        <label class="checkbox-button">
-                            <input class="checkbox-button__input" type="checkbox" name="accesouarces">
+                        <label class="display_f">
+                            <input class="display_n" type="checkbox" name="shampoo">
                             <span class="checkbox-button__fake-input"></span>
-                            <span class="checkbox-button__text">Шампунь</span>
+                            <span class="text-b block_ml10px">Шампунь</span>
                         </label>
                     </div>
                 </details>
         </div>
 
-        <div class="wrapper__third-row_column2">
-            <p class="field__text checkbox-button__margin_1600">rich Checkbox Buttons</p>
-            <label class="checkbox-button field__margin_0500rem">
-                <input class="checkbox-button__input" type="checkbox" name="accesouarces">
+        <div class="wrapper__row3_column2">
+            <p class="text text_bold text_ttu block_mb16px">rich Checkbox Buttons</p>
+            <label class="display_f block_mb5px">
+                <input class="display_n" type="checkbox" name="corridor">
                 <span class="checkbox-button__fake-input"></span>
-                <span class="checkbox-button__text checkbox-button__text_opacity075 checkbox-button__text_bold">Широкий коридор</span>
+                <span class="text-b text_1F2041-075 text_bold block_ml10px">Широкий коридор</span>
             </label>
-            <p class="checkbox-button__text_fs12 checkbox-button__margin-left_3000 checkbox-button__margin_1000">Ширина коридоров в номере не менее 91 см.</p>
-            <label class="checkbox-button field__margin_0500rem">
-                <input class="checkbox-button__input" type="checkbox" name="accesouarces">
+            <p class="text text_lh14 text_1F2041-05 block_ml30px block_mb10px">Ширина коридоров в номере не менее 91 см.</p>
+            <label class="display_f block_mb5px">
+                <input class="display_n" type="checkbox" name="helper">
                 <span class="checkbox-button__fake-input"></span>
-                <span class="checkbox-button__text checkbox-button__text_opacity075 checkbox-button__text_bold">Помощник для инвалидов</span>
+                <span class="text-b text_1F2041-075 text_bold block_ml10px">Помощник для инвалидов</span>
             </label>
-            <p class="checkbox-button__text_fs12 checkbox-button__margin-left_3000">На 1 этаже вас встретит специалист <br>и проводит до номера.</p>
+            <p class="text text_lh14 text_1F2041-05 block_ml30px block_mb10px">На 1 этаже вас встретит специалист <br>и проводит до номера.</p>
         </div>
 
         <div class="wrapper__third-row_column3">
-            <p class="field__text checkbox-button__margin_1600">bullet list</p>
+            <p class="text text_bold text_ttu block_mb16px">bullet list</p>
             <ul class="bullet-list">
-                <li class="bullet-list__item"><span class="checkbox-button__text bullet-list__text checkbox-button__text_opacity075">Нельзя с питомцами</span></li>
-                <li class="bullet-list__item"><span class="checkbox-button__text bullet-list__text checkbox-button__text_opacity075">Без вечеринок и мероприятий</span></li>
-                <li class="bullet-list__item"><span class="checkbox-button__text bullet-list__text checkbox-button__text_opacity075">Время прибытия — после 13:00,<br> а выезд до 12:00</span></li>
+                <li class="bullet-list__item">
+                    <span class="text-b bullet-list__text text_1F2041-075 block_ml10px">Нельзя с питомцами</span>
+                </li>
+                <li class="bullet-list__item">
+                    <span class="text-b bullet-list__text text_1F2041-075 block_ml10px">Без вечеринок и мероприятий</span>
+                </li>
+                <li class="bullet-list__item">
+                    <span class="text-b bullet-list__text text_1F2041-075 block_ml10px">Время прибытия — после 13:00,<br> а выезд до 12:00</span>
+                </li>
             </ul>
         </div>
     </div>
 
-    <div class="wrapper__fourth-row">
+    <div class="wrapper__row4">
 
         <div class="wrapper__fourth-row_column1">
             <div class="advantages">
                 <div class="advantages__img">
                     <img src="img/icons/insert_emoticon.png" alt="smile">
                 </div>
-                <p class="checkbox-button__text"><span class="checkbox-button__text_bold advantages__text">Комфорт</span>Шумопоглощающие стены</p>
+                <p class="text-b block_ml10px"><span class="text_bold display_b block_mb8px">Комфорт</span>Шумопоглощающие стены</p>
             </div>
             <div class="advantages advantages_padding-down">
                 <div class="advantages__img">
-                    <img src="img/icons/location_city.png" alt="building">
+                    <img src="img/icons/location_city.png" alt="biulding">
                 </div>
-                <p class="checkbox-button__text"><span class="checkbox-button__text_bold advantages__text">Удобство</span>Окно в каждой из спален</p>
+                <p class="text-b block_ml10px"><span class="text_bold display_b block_mb8px">Удобство</span>Окно в каждой из спален</p>
             </div>
         </div>
 
         <div class="wrapper__fourth-row_column2">
-            <div class="comments list__margin_1500">
+            <div class="display_f block_mb15px">
                 <img src="img/icons/image.png" alt="avatarka">
-                <p class="checkbox-button__text"><span class="checkbox-button__text_bold advantages__text">Мурад Сарафанов</span>5 дней назад</p>
+                <p class="text-b block_ml10px"><span class="text_bold display_b block_mb8px">Мурад Сарафанов</span>5 дней назад</p>
             </div>
-            <div class="comments">
+            <div class="display_f">
                 <button class="button-like button-like_pressed">
                     <img class="button-like__heart" src="img/icons/favorite.png" alt="heart_pressed">
                     <span class="button-like__text">12</span>
                 </button>
-                <p class="checkbox-button__text comments__margin-left">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий.
+                <p class="text-b block_ml14px">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий.
                 И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
             </div>
         </div>
-
     </div>
-    
 </body>
 </html>
