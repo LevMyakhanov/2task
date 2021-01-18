@@ -29,6 +29,10 @@ a {
     text-decoration: none;
     color: inherit;
 }
+td {
+    text-align: center;
+    vertical-align: center;
+}
 
 
 .text {
@@ -44,6 +48,20 @@ a {
     color: #1f2041;
     line-height: 1.8rem;
 }
+.text-m {
+    font-family: "Montserrat", sans-serif, Helvetica;
+    font-size: 1.9rem;
+    color: #1f2041;
+    line-height: 2.3rem;
+    font-weight: 700;
+}
+.text-l {
+    font-family: "Montserrat", sans-serif, Helvetica;
+    font-size: 2.4rem;
+    color: #1f2041;
+    line-height: 2.9rem;
+    font-weight: 700;
+}
 
 .text_fs14 {
     font-size: 1.4rem;
@@ -52,22 +70,20 @@ a {
     font-size: 2.4rem;
 }
 
-
-
 .text_lh17 {
     line-height: 1.7rem;
 }
 .text_lh18 {
     line-height: 1.8rem;
 }
-.text_lh29 {
-    line-height: 2.9rem;
-}
 .text_lh20 {
     line-height: 2rem;
 }
 .text_lh22 {
     line-height: 2.2rem;
+}
+.text_lh29 {
+    line-height: 2.9rem;
 }
 
 
@@ -430,14 +446,6 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-.calendar__text {
-    font-weight: 400;
-    color: rgba(31, 32, 65, 0.5);
-}
-.calendar__text-tr {
-    font-weight: 400;
-    color: rgba(31, 32, 65, 0.25);
-}
 .calendar_green {
     border-radius: 50%;
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
@@ -456,16 +464,24 @@ a {
     border-radius: 0.4rem;
 }
 
-.room__back-img {
+/* у картинки не скруглились углы */
+.room__img-wr {
     width: 27rem;
     height: 15rem;
     position: relative;
     display: flex;
     justify-content: space-between;
-}
-.room__back-img img {
     border-top-left-radius: 0.4rem;
     border-top-right-radius: 0.4rem;
+}
+.room__img {
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+}
+.room_md {
+    margin: 2rem 1.7rem 0.8rem 2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
 }
 .room__button {
     position: absolute;
@@ -509,7 +525,7 @@ a {
 .room__image-scroll_active {
     background-color: #FFF;
 }
-.room__wrapper_text {
+.room__text-wr {
     width: 23rem;
     display: flex;
     justify-content: space-between;
@@ -521,6 +537,7 @@ a {
 .room__like-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0 2rem;
 }
 .room__star-wrapper {
