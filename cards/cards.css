@@ -7,6 +7,11 @@ html {
 }
 body {
     margin: 0;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
 }
 p, ul {
     margin: 0;
@@ -115,6 +120,7 @@ td {
 .text_000 {
     color: #000;
 }
+
 
 .mb_22px {
     /* нижний отступ 2.2rem, а не 2.1, так как line-height двух строчек получается 5.8rem,
@@ -363,14 +369,6 @@ td {
 .registration__radio:checked + .registration__toggle::after {
     display: block;
 }
-.text-fs14 {
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: rgba(31, 32, 65, 0.75);
-}
-.text-fs14_black {
-    color: black;
-}
 .registration__wrapper-button-href {
     display: flex;
     justify-content: space-between;
@@ -393,14 +391,6 @@ td {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.registration__href-text {
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    color: #000;
-    text-transform: none;
 }
 
 

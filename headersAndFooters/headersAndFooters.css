@@ -7,11 +7,11 @@ html {
 }
 body {
     margin: 0;
-    font-family: Montserrat;
+    /* font-family: Montserrat;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    color: rgba(31, 32, 65, 0.75);
+    color: rgba(31, 32, 65, 0.75); */
 }
 p, ul {
     margin: 0;
@@ -103,7 +103,6 @@ a {
 
 .headers-footers {
     width: 144rem;
-    height: 135rem;
     padding: 14rem 0;
     background: #E5E5E5;
 }
@@ -152,6 +151,7 @@ a {
 .submenu {
     display: none;
     position: absolute;
+    background: #FFF;
 }
 .has-dropdown__services:hover > .submenu {
     display: block;

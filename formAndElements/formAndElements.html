@@ -8,22 +8,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="formAndElements.css">
 </head>
-<body>
-    <div class="wrapper__row1">
+<body class="Form-Elements">
+    <div class="Form-Elements__row">
 
-        <div class="wrapper__row1_column1">
-            <label class="display_b block_mb20px">
-                <span class="display_i-b text text_bold text_ttu block_mb5px">text field</span>
-                <span class="display_i-b text text_ttu text_1F2041-05 text_right block_mt-3px">Default</span>
+        <div class="Form-Elements__row1_column1">
+            <label class="field block_mb20px">
+                <span class="field__name text text_bold text_ttu block_mb5px">text field</span>
+                <span class="field__name text text_ttu text_1F2041-05 text_right block_mt-3px">Default</span>
                 <input class="field__input" type="email" name="email" placeholder="Email">
             </label>
-            <label class="display_b block_mb20px">
-                <span class="display_i-b text text_bold text_ttu block_mb5px">text field</span>
-                <span class="display_i-b text text_ttu text_1F2041-05 text_right block_mb5px">Hover / Focus</span>
+            <label class="field block_mb20px">
+                <span class="field__name text text_bold text_ttu block_mb5px">text field</span>
+                <span class="field__name text text_ttu text_1F2041-05 text_right block_mb5px">Hover / Focus</span>
                 <input class="field__input" type="text" name="text" value="This is pretty awesome">
             </label>
-            <label class="display_b block_mb22px">
-                <span class="display_b text text_bold text_ttu block_mb5px">Dropdown</span>
+            <label class="field block_mb22px">
+                <span class="field__name text text_bold text_ttu block_mb5px">Dropdown</span>
                 <span class="field__wrapper-select">
                     <select class="field__input field__select" name="amount of guests">
                         <option value="Сколько гостей">Сколько гостей</option>
@@ -34,29 +34,28 @@
                     </select>
                 </span>
             </label>
-            <label class="display_b block_mb40px">
-                <span class="display_b text text_bold text_ttu block_mb5px">masked text field</span>
+            <label class="field block_mb40px">
+                <span class="field__name text text_bold text_ttu block_mb5px">masked text field</span>
                 <input class="field__input field__input-hidden" type="date" name="masked text field">
             </label>
             <div class="field__wrapper-2inputs block_mb40px">
-                <label class="display_b field__width_15rem">
-                    <span class="display_b text text_bold text_ttu block_mb5px">date Dropdown</span>
-                    <span class="display_b field__wrapper-select">
+                <label class="field_small">
+                    <span class="field__name text text_bold text_ttu block_mb5px">date Dropdown</span>
+                    <span class="field__wrapper-select">
                         <input class="field__input field__input-hidden" type="date" name="date_dropdown1">
                     </span>
                 </label>
-                <label class="display_b field__width_15rem">
-                    <span class="display_b text text_bold text_ttu block_mb5px">date Dropdown</span>
-                    <span class="display_b field__wrapper-select">
+                <label class="field_small">
+                    <span class="field__name text text_bold text_ttu block_mb5px">date Dropdown</span>
+                    <span class="field__wrapper-select">
                         <input class="field__input field__input-hidden" type="date" name="date_dropdown2">
                     </span>
                 </label>
             </div>
-            <label class="display_b field__width_26rem block_mb41px">
-                <span class="display_b text text_bold text_ttu block_mb5px">filter date Dropdown</span>
+            <label class="field_middle block_mb41px">
+                <span class="field__name text text_bold text_ttu block_mb5px">filter date Dropdown</span>
                 <!-- как выставить две даты в поле 19 авг-23 авг -->
                 <div class="field__wrapper-select">
-                    <!-- select нельзя в label, что делать? -->
                     <select class="field__input field__select">
                         <option value="Сколько гостей">19 авг - 23 авг</option>
                         <option value="Сколько гостей">1</option>
@@ -64,59 +63,65 @@
                     </select>
                 </div>
             </label>
-            <label class="display_b field__width_26rem">
-                <span class="display_b text text_bold text_ttu block_mb5px">subscription text field</span>
+            <label class="field_middle">
+                <span class="field__name text text_bold text_ttu block_mb5px">subscription text field</span>
                 <input class="field__input" type="email" name="subscription text field" placeholder="Email">
-                <span class="display_b field__href block_ml223px">
+                <span class="field__href block_ml223px">
                     <a href="https://www.google.com/"><img src="img/icons/arrow_forward_violet.png" alt="img"></a>
                 </span>
             </label>
         </div>
 
-        <div class="wrapper__row1_column2">
-            <p class="text text_bold text_ttu block_mb16px">Checkbox Buttons</p>
-            <label class="display_f block_mb10px">
-                <input class="display_n" type="checkbox" name="smoking">
-                <span class="checkbox-button__fake-input"></span>
-                <span class="text-b text_lh20 text_1F2041-05 block_ml10px">Можно курить</span>
-            </label>
-            <label class="display_f block_mb10px">
-                <input class="display_n" type="checkbox" name="pets" checked>
-                <span class="checkbox-button__fake-input"></span>
-                <span class="text-b text_lh20 text_1F2041-05 block_ml10px">Можно с питомцами</span>
-            </label>
-            <label class="display_f block_mb40px">
-                <input class="display_n" type="checkbox" name="guests" checked>
-                <span class="checkbox-button__fake-input"></span>
-                <span class="text-b text_1F2041-05 block_ml10px">Можно пригласить гостей <br>(до 10 человек)</span>
-            </label>
+        <div class="Form-Elements__row1_column2">
+            <!-- Обернул Checkbox Buttons в div, чтобы выделить в блок. -->
+
+            <div class="checkbox-button">
+                <p class="text text_bold text_ttu block_mb16px">Checkbox Buttons</p>
+                <label class="checkbox-button__label block_mb10px">
+                    <input class="checkbox-button__input" type="checkbox" name="smoking">
+                    <span class="checkbox-button__fake-input"></span>
+                    <span class="text-b text_lh20 text_1F2041-05 block_ml10px">Можно курить</span>
+                </label>
+                <label class="checkbox-button__label block_mb10px">
+                    <input class="checkbox-button__input" type="checkbox" name="pets" checked>
+                    <span class="checkbox-button__fake-input"></span>
+                    <span class="text-b text_lh20 text_1F2041-05 block_ml10px">Можно с питомцами</span>
+                </label>
+                <label class="checkbox-button__label block_mb40px">
+                    <input class="checkbox-button__input" type="checkbox" name="guests" checked>
+                    <span class="checkbox-button__fake-input"></span>
+                    <span class="text-b text_1F2041-05 block_ml10px">Можно пригласить гостей <br>(до 10 человек)</span>
+                </label>
+            </div>
+
+
             <p class="text text_bold text_ttu block_mb16px">Radio Buttons</p>
-            <div class="checkbox-button__radio-wrapper block_mb40px">
-                <label class="display_f">
-                    <input class="display_n" type="radio" name="gender" checked>
-                    <span class="checkbox-button__fake-input checkbox-button__radio"></span>
+            <div class="radio-button__wrapper block_mb40px">
+                <label class="radio-button">
+                    <input class="radio-button__input" type="radio" name="gender" checked>
+                    <span class="checkbox-button__fake-input radio-button_round"></span>
                     <span class="text-b text_lh20 text_1F2041-05 block_ml10px">Мужчина</span>
                 </label>
-                <label class="display_f">
-                    <input class="display_n" type="radio" name="gender">
-                    <span class="checkbox-button__fake-input checkbox-button__radio"></span>
+                <label class="radio-button">
+                    <input class="radio-button__input" type="radio" name="gender">
+                    <span class="checkbox-button__fake-input radio-button_round"></span>
                     <span class="text-b text_lh20 text_1F2041-05 block_ml10px">Женщина</span>
                 </label>
             </div>
             <p class="text text_bold text_ttu block_mb16px">Toggle</p>
-            <label class="display_f block_mb14px">
-                <input class="display_n" type="checkbox" name="special offers" checked>
-                <span class="checkbox-button__fake-input-toggle"></span>
+            <label class="toggle block_mb14px">
+                <input class="toggle__input" type="checkbox" name="special offers" checked>
+                <span class="toggle__input_fake"></span>
                 <span class="text-b text_lh20 text_1F2041-075 block_ml10px">Получать спецпредложения</span>
             </label>
-            <label class="display_f block_mb40px">
-                <input class="display_n" type="checkbox" name="special offers disabled">
-                <span class="checkbox-button__fake-input-toggle"></span>
+            <label class="toggle block_mb14px">
+                <input class="toggle__input" type="checkbox" name="special offers">
+                <span class="toggle__input_fake"></span>
                 <span class="text-b text_lh20 text_1F2041-075 block_ml10px">Получать спецпредложения</span>
             </label>
             <p class="text text_bold text_ttu block_mb16px">like button</p>
             <!-- добавил div чтобы избавиться от пробела по умолчанию между кнопками -->
-            <div class="display_f block_mb40px">
+            <div class="button-like__wrapper block_mb40px">
                 <button class="button-like">
                     <img class="button-like__heart" src="img/icons/favorite_border.png" alt="heart_unpressed">
                     <span class="button-like__text">2</span>
@@ -127,15 +132,15 @@
                 </button>
             </div>
             <p class="text text_bold text_ttu block_mb16px">rate button</p>
-            <div class="display_f">
-                <div class="display_f">
+            <div class="rate-button__wrapper">
+                <div class="rate-button">
                     <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
                     <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
                     <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
                     <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
                     <button class="button__star"><img src="img/icons/star_border.png" alt="star"></button>
                 </div>
-                <div class="display_f block_ml20px">
+                <div class="rate-button block_ml20px">
                     <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
                     <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
                     <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
@@ -146,7 +151,7 @@
         </div>
 
         <div class="wrapper__row1_column3">
-            <div class="interim__wrapper block_mb40px">
+            <div class="slider block_mb40px">
                 <span class="display_i-b text text_bold text_ttu">Range Slider</span>
                 <span class="display_i-b text text_1F2041-05 text_right">5 000₽ - 10 000₽</span>
                 <input type="range" name="Range Slider">
