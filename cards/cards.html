@@ -10,23 +10,22 @@
 </head>
 <body>
     <div class="cards">
-        <div class="wrapper__column1">
-            <div class="wrapper__column1_row1 mb_40px">
+        <div class="cards__column1">
+            <div class="room-search mb_40px">
                 <p class="text-l mb_22px">Найдём номера под ваши пожелания</p>
-                <div class="rooms-search__wrapper-2inputs mb_20px">
-                    <div class="rooms-search_width-15rem">
-                        <p class="text text_bold text_ttu mb_5px">прибытие</p>
-                        <!-- после добавления класса text, всё стало как надо, хотя не всё совпадает с макетом, почему?-->
-                        <div class="rooms-search__wrapper-select">
-                            <input class="rooms-search__input" type="date">
-                        </div>
-                    </div>
-                    <div class="rooms-search_width-15rem">
-                        <p class="text text_bold text_ttu mb_5px">выезд</p>
-                        <div class="rooms-search__wrapper-select">
-                            <input class="rooms-search__input" type="date">
-                        </div>
-                    </div>
+                <div class="field__inputs-wr block_mb20px">
+                    <label class="field_small">
+                        <span class="field__name text text_bold text_ttu block_mb5px">прибытие</span>
+                        <span class="field__wrapper-select">
+                            <input class="field__input field__input-hidden" type="date" name="date_dropdown1">
+                        </span>
+                    </label>
+                    <label class="field_small">
+                        <span class="field__name text text_bold text_ttu block_mb5px">выезд</span>
+                        <span class="field__wrapper-select">
+                            <input class="field__input field__input-hidden" type="date" name="date_dropdown2">
+                        </span>
+                    </label>
                 </div>
                 <p class="text text_bold text_ttu mb_5px">гости</p>
                 <div class="rooms-search__wrapper-select mb_31px">

@@ -209,12 +209,12 @@ a {
 }
 
 
-.Form-Elements__row {
+.form-elements__row {
     display: flex;
     margin-top: 14.3rem;
     margin-left: 14rem;
 }
-.Form-Elements__row1_column1 {
+.form-elements__row1_column1 {
     width: 32rem;
 }
 .field {
@@ -245,7 +245,7 @@ a {
 .field__input:hover, .field__input:focus {
     border: 1px solid rgba(31, 32, 65, 0.5);
 }
-.field__select {
+.field_appearance {
     appearance: none;
 }
 .field__wrapper-select {
@@ -267,7 +267,7 @@ a {
     transform: rotateZ(45deg);
     pointer-events: none;
 }
-.Form-Elements__inputs-wr {
+.field__inputs-wr {
     display: flex;
     justify-content: space-between;
 }
@@ -289,7 +289,7 @@ a {
 }
 
 
-.Form-Elements__row1_column2 {
+.form-elements__row1_column2 {
     margin-left: 12.6rem;
     width: 26rem;
 }
@@ -410,7 +410,7 @@ a {
 .toggle__input:checked + .toggle__input_fake::after {
     display: block;
 }
-.Form-Elements__button-like-wr {
+.form-elements__button-like-wr {
     display: flex;
 }
 .button-like {
@@ -441,7 +441,7 @@ a {
 .button-like_pressed .button-like__text {
     color: #BC9CFF;
 }
-.Form-Elements__rate-button-wr {
+.form-elements__rate-button-wr {
     display: flex;
 }
 .rate-button {
@@ -455,7 +455,7 @@ a {
     border: none;
 }
 
-.Form-Elements__row1_column3 {
+.form-elements__row1_column3 {
     margin-left: 13.2rem;
 }
 
@@ -466,7 +466,7 @@ a {
 .slider__name {
     display: inline-block;
 }
-.Form-Elements__button-wr {
+.form-elements__button-wr {
     display: flex;
 }
 .button {
@@ -552,13 +552,13 @@ a {
     display: none;
 }
 
-.Form-Elements__row2 {
+.form-elements__row2 {
     display: flex;
     margin-top: 10rem;
     margin-left: 14rem;
     margin-bottom: 5.444rem;
 }
-.Form-Elements__row2_column1 {
+.form-elements__row2_column1 {
     width: 26.6rem;
 }
 .dropdown-room {
@@ -626,12 +626,12 @@ a {
 }
 
 
-.Form-Elements__row3 {
+.form-elements__row3 {
     margin-left: 14rem;
     display: flex;
     margin-bottom: 10.2rem;
 }
-.Form-Elements__row3_column1 {
+.form-elements__row3_column1 {
     width: 26.6rem;
 }
 .expandable-list {
@@ -683,12 +683,12 @@ a {
 }
 
 
-.Form-Elements__row4 {
+.form-elements__row4 {
     margin-left: 14rem;
     margin-bottom: 13.1rem;
     display: flex;
 }
-.Form-Elements__row4_column1 {
+.form-elements__row4_column1 {
     width: 29.1rem;
 }
 .advantages {
@@ -706,7 +706,7 @@ a {
 .advantages_padding-down {
     padding-top: 2rem;
 }
-.Form-Elements__row4_column2 {
+.form-elements__row4_column2 {
     width: 71.1rem;
     margin-top: 1rem;
     margin-left: 15.6rem;
@@ -716,4 +716,29 @@ a {
 }
 .like-comments {
     display: flex;
+}
+
+
+
+
+
+
+
+.cards {
+    display: flex;
+    width: 144rem;
+    height: 135rem;
+    background: #E5E5E5;
+    padding: 15rem 14rem 14rem 14rem ;
+}
+.cards__column1 {
+    width: 38rem;
+}
+.room-search {
+    width: 38rem;
+    background: #FFFFFF;
+    border: 0.1rem solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 2.5rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+    padding: 4rem 3rem 3rem 3rem;
 }

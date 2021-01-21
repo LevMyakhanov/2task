@@ -8,10 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="formAndElements.css">
 </head>
-<body class="Form-Elements">
-    <div class="Form-Elements__row">
+<body class="form-elements">
+    <div class="form-elements__row">
 
-        <div class="Form-Elements__row1_column1">
+        <div class="form-elements__row1_column1">
             <label class="field block_mb20px">
                 <span class="field__name text text_bold text_ttu block_mb5px">text field</span>
                 <span class="field__name text text_ttu text_1F2041-05 text_right block_mt-3px">Default</span>
@@ -25,7 +25,7 @@
             <label class="field block_mb22px">
                 <span class="field__name text text_bold text_ttu block_mb5px">Dropdown</span>
                 <span class="field__wrapper-select">
-                    <select class="field__input field__select" name="amount of guests">
+                    <select class="field__input field_appearance" name="amount of guests">
                         <option value="Сколько гостей">Сколько гостей</option>
                         <option value="Сколько гостей">1</option>
                         <option value="Сколько гостей">2</option>
@@ -38,7 +38,7 @@
                 <span class="field__name text text_bold text_ttu block_mb5px">masked text field</span>
                 <input class="field__input field__input-hidden" type="date" name="masked text field">
             </label>
-            <div class="Form-Elements__inputs-wr block_mb40px">
+            <div class="field__inputs-wr block_mb40px">
                 <label class="field_small">
                     <span class="field__name text text_bold text_ttu block_mb5px">date Dropdown</span>
                     <span class="field__wrapper-select">
@@ -56,7 +56,7 @@
                 <span class="field__name text text_bold text_ttu block_mb5px">filter date Dropdown</span>
                 <!-- как выставить две даты в поле 19 авг-23 авг -->
                 <div class="field__wrapper-select">
-                    <select class="field__input field__select">
+                    <select class="field__input field__appearance">
                         <option value="Сколько гостей">19 авг - 23 авг</option>
                         <option value="Сколько гостей">1</option>
                         <option value="Сколько гостей">2</option>
@@ -72,7 +72,7 @@
             </label>
         </div>
 
-        <div class="Form-Elements__row1_column2">
+        <div class="form-elements__row1_column2">
             <!-- Обернул Checkbox Buttons в div, чтобы выделить в блок. -->
 
             <div class="checkbox-button">
@@ -121,7 +121,7 @@
             </label>
             <p class="text text_bold text_ttu block_mb16px">like button</p>
             <!-- добавил div чтобы избавиться от пробела по умолчанию между кнопками -->
-            <div class="Form-Elements__button-like-wr block_mb40px">
+            <div class="form-elements__button-like-wr block_mb40px">
                 <button class="button-like">
                     <img class="button-like__heart" src="img/icons/favorite_border.png" alt="heart_unpressed">
                     <span class="button-like__text">2</span>
@@ -132,7 +132,7 @@
                 </button>
             </div>
             <p class="text text_bold text_ttu block_mb16px">rate button</p>
-            <div class="Form-Elements__rate-button-wr">
+            <div class="form-elements__rate-button-wr">
                 <div class="rate-button">
                     <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
                     <button class="button__star"><img src="img/icons/star.png" alt="star"></button>
@@ -150,14 +150,14 @@
             </div>
         </div>
 
-        <div class="Form-Elements__row1_column3">
+        <div class="form-elements__row1_column3">
             <div class="slider block_mb40px">
                 <span class="slider__name text text_bold text_ttu">Range Slider</span>
                 <span class="slider__name text text_1F2041-05 text_right">5 000₽ - 10 000₽</span>
                 <input type="range" name="Range Slider">
             </div>
             <p class="text text_bold text_ttu block_mb16px">buttons</p>
-            <div class="Form-Elements__button-wr block_mb30px">
+            <div class="form-elements__button-wr block_mb30px">
                 <button class="button button_linear-gradient">
                     <span class="text text_bold text_ttu text_FFF">click me</span>
                 </button>
@@ -165,7 +165,7 @@
                     <span class="text text_bold text_ttu text_FFF">click me</span>
                 </button>
             </div>
-            <div class="Form-Elements__button-wr block_mb31px">
+            <div class="form-elements__button-wr block_mb31px">
                 <button class="button button_bordered">
                     <span class="text text_bold text_ttu text_BC9CFF">click me</span>
                 </button>
@@ -173,7 +173,7 @@
                     <span class="text text_bold text_ttu text_BC9CFF">click me</span>
                 </button>
             </div>
-            <div class="Form-Elements__button-wr block_mb30px">
+            <div class="form-elements__button-wr block_mb30px">
                 <button>
                     <span class="text text_bold text_ttu text_BC9CFF">click me</span>
                 </button>
@@ -212,8 +212,8 @@
     </div>
     
 
-    <div class="Form-Elements__row2">
-        <div class="Form-Elements__row2_column1">
+    <div class="form-elements__row2">
+        <div class="form-elements__row2_column1">
             <label class="dropdown-default block_mb20px">
                 <span class="dropdown-default__name text text_bold text_ttu block_mb5px">dropdown</span>
                 <span class="text text_ttu text_1F2041-05 text_right block_mb5px">default</span>
@@ -345,8 +345,8 @@
         </div>
     </div>
     
-    <div class="Form-Elements__row3">
-        <div class="Form-Elements__row3_column1">
+    <div class="form-elements__row3">
+        <div class="form-elements__row3_column1">
                 <details class="expandable-list">
                     <summary class="expandable-list__summary field__wrapper-select block_mb17px">
                         <span class="text text_bold text_ttu">expandable checkbox list</span>
@@ -456,9 +456,9 @@
         </div>
     </div>
 
-    <div class="Form-Elements__row4">
+    <div class="form-elements__row4">
 
-        <div class="Form-Elements__row4_column1">
+        <div class="form-elements__row4_column1">
             <div class="advantages">
                 <div class="advantages__img">
                     <img src="img/icons/insert_emoticon.png" alt="smile">
@@ -473,7 +473,7 @@
             </div>
         </div>
 
-        <div class="Form-Elements__row4_column2">
+        <div class="form-elements__row4_column2">
             <div class="comments block_mb15px">
                 <img src="img/icons/image.png" alt="avatarka">
                 <p class="text-b block_ml10px"><span class="text_bold display_b block_mb8px">Мурад Сарафанов</span>5 дней назад</p>
