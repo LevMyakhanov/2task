@@ -15,7 +15,7 @@
             <label class="field block_mb20px">
                 <span class="field-name text text_bold text_ttu block_mb5px">text field</span>
                 <span class="field-name text text_ttu text_1F2041-05 text_right block_mt-3px">Default</span>
-                <input class="input" type="email" name="email" placeholder="Email">
+                <input class="input text-b text_1F2041-075" type="email" name="email" placeholder="Email">
             </label>
             <label class="field block_mb20px">
                 <span class="field-name text text_bold text_ttu block_mb5px">text field</span>
@@ -25,46 +25,39 @@
             <div class="field block_mb22px">
                 <span class="field-name text text_bold text_ttu block_mb5px">Dropdown</span>
                 <div class="check-mark">
-                    <input class="input" name="amount of guests" type="text" value="Сколько гостей">
+                    <input class="input text-b text_1F2041-075" name="amount of guests" type="text" value="Сколько гостей">
                 </div>
             </div>
             <label class="field block_mb40px">
                 <span class="field-name text text_bold text_ttu block_mb5px">masked text field</span>
-                <input class="input input-hidden" type="date" name="masked text field">
+                <input class="input input-hidden text-b text_1F2041-075" type="date" name="masked text field">
             </label>
             <div class="input-wrapper block_mb40px">
                 <label class="field field_small">
                     <span class="field-name text text_bold text_ttu block_mb5px">date Dropdown</span>
                     <div class="check-mark">
-                        <input class="input input-hidden" type="date" name="arrival">
+                        <input class="input input-hidden text-b text_1F2041-075" type="date" name="arrival">
                     </div>
                 </label>
                 <label class="field field_small">
                     <span class="field-name text text_bold text_ttu block_mb5px">date Dropdown</span>
                     <div class="check-mark">
-                        <input class="input input-hidden" type="date" name="departure">
+                        <input class="input input-hidden text-b text_1F2041-075" type="date" name="departure">
                     </div>
                 </label>
             </div>
             <div class="field field_middle block_mb41px">
                 <span class="field-name text text_bold text_ttu block_mb5px">filter date Dropdown</span>
                 <div class="check-mark">
-                    <input class="input" name="amount of guests" type="text" value="19 авг - 23 авг">
+                    <input class="input text-b text_1F2041-075" name="amount of guests" type="text" value="19 авг - 23 авг">
                 </div>
             </div>
             <label class="field field_middle">
                 <span class="field-name text text_bold text_ttu block_mb5px">subscription text field</span>
-                <input class="input" type="email" name="subscription text field" placeholder="Email">
-                <!-- так можно? -->
+                <input class="input text-b text_1F2041-075" type="email" name="subscription text field" placeholder="Email">
                 <button class="field__href block_ml223px">
                     <img src="img/icons/arrow_forward_violet.png" alt="arrow_forward_violet">
                 </button>
-                <!-- <span class="field__href block_ml223px">
-                    переделать ссылку в кнопку submit
-                    <a href="https://www.google.com/">
-                        <img src="img/icons/arrow_forward_violet.png" alt="arrow_forward_violet">
-                    </a>
-                </span> -->
             </label>
         </div>
 
@@ -170,10 +163,10 @@
                 </button>
             </div>
             <div class="form-elements__button-wr block_mb30px">
-                <button>
+                <button class="button_naked">
                     <span class="text text_bold text_ttu text_BC9CFF">click me</span>
                 </button>
-                <button class="block_ml20px">
+                <button class="button_naked block_ml20px">
                     <span class="text text_bold text_ttu text_1F2041-05">click me</span>
                 </button>
             </div>
@@ -210,30 +203,24 @@
 
     <div class="form-elements__row2">
         <div class="form-elements__row2_column1">
-            <label class="dropdown-default block_mb20px">
-                <span class="dropdown-default__name text text_bold text_ttu block_mb5px">dropdown</span>
-                <span class="text text_ttu text_1F2041-05 text_right block_mb5px">default</span>
-                <div class="check-mark">
-                    <select class="input field_square-angles" name="rooms&beds">
-                        <option value="">1room&1bed</option>
-                        <option value="">1room&2beds</option>
-                        <option value="">2rooms&2beds</option>
-                    </select>
-                </div>
-            </label>
-            <div class="dropdown-w26">
-                <label class="dropdown-default">
-                    <span class="dropdown-default__name text text_bold text_ttu block_mb5px">dropdown</span>
-                    <span class="dropdown-default__name text text_ttu text_1F2041-05 text_right block_mb5px">expanded</span>
+            <div class="dropdown">
+                <label class="field block_mb20px">
+                    <span class=" field-name text text_bold text_ttu block_mb5px">dropdown</span>
+                    <span class="text text_ttu text_1F2041-05 text_right block_mb5px">default</span>
                     <div class="check-mark">
-                        <select class="input field_square-angles dropdown-default_border" name="rooms&beds">
-                            <option value="">1room&1bed</option>
-                            <option value="">1room&2beds</option>
-                            <option value="">2rooms&2beds</option>
-                        </select>
+                        <input class="input field_square-angles text-b text_1F2041-075" type="text" name="rooms&beds" value="2 спальни, 2 кровати...">
                     </div>
                 </label>
-                <div class="dropdown__wrapper dropdown__wrapper_width26">
+            </div>
+            <div class="dropdown">
+                <label class="field">
+                    <span class=" field-nametext text_bold text_ttu block_mb5px">dropdown</span>
+                    <span class=" field-nametext text_ttu text_1F2041-05 text_right block_mb5px">expanded</span>
+                    <div class="check-mark">
+                        <input class="input field_square-angles field_border-color text-b text_1F2041-075" type="text" name="rooms&beds" value="2 спальни, 2 кровати...">
+                    </div>
+                </label>
+                <div class="dropdown__wrapper">
                     <div class="dropdown_flex block_mb7px">
                         <span class="text text_bold text_ttu">спальни</span>
                         <div>
@@ -261,15 +248,10 @@
                 </div>
             </div>
         </div>
-        <div class="dropdown-w32 block_ml181px">
+        <div class="dropdown_w32 block_ml181px">
             <p class="text text_bold text_ttu block_mb5px">dropdown</p>
             <div class="check-mark">
-                <select class="table__select dropdown-default_border" name="rooms&beds">
-                    <option value="">Сколько гостей</option>
-                    <option value="">1room&1bed</option>
-                    <option value="">1room&2beds</option>
-                    <option value="">2rooms&2beds</option>
-                </select>
+                <input class="input field_square-angles field_border-color text-b text_1F2041-075" type="text" name="guests" value="Сколько гостей">
             </div>
             <div class="dropdown__wrapper">
                 <div class="dropdown_flex block_mb7px">
@@ -300,15 +282,10 @@
                 <button class="text text_bold text_ttu text_BC9CFF text_right">применить</button>
             </div>
         </div>
-        <div class="dropdown-w32 block_ml72px">
+        <div class="dropdown_w32 block_ml72px">
             <p class="text text_bold text_ttu block_mb5px">dropdown</p>
             <div class="check-mark">
-                <select class="table__select dropdown-default_border" name="rooms&beds"> 
-                    <option value="">Сколько гостей</option>
-                    <option value="">1room&1bed</option>
-                    <option value="">1room&2beds</option>
-                    <option value="">2rooms&2beds</option>
-                </select>
+                <input class="input field_square-angles field_border-color text-b text_1F2041-075" type="text" name="guests" value="Сколько гостей">
             </div>
             <div class="dropdown__wrapper">
                 <div class="dropdown_flex block_mb7px">
