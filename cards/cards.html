@@ -11,38 +11,38 @@
 <body>
     <div class="cards">
         <div class="cards__column1">
-            <div class="room-search mb_40px">
+            <div class="room-search block_mb40px">
                 <p class="text-l block_mb22px">Найдём номера под ваши пожелания</p>
                 <div class="input-wrapper block_mb20px">
                     <label class="field field_small">
-                        <span class="field-name text text_bold text_ttu block_mb5px">date Dropdown</span>
+                        <span class="field-name text text_bold text_ttu block_mb5px">прибытие</span>
                         <div class="check-mark">
-                            <input class="input input-hidden" type="date" name="arrival">
+                            <input class="input input-hidden text-b text_ttu text_1F2041-075" type="date" name="arrival">
                         </div>
                     </label>
                     <label class="field field_small">
-                        <span class="field-name text text_bold text_ttu block_mb5px">date Dropdown</span>
+                        <span class="field-name text text_bold text_ttu block_mb5px">выезд</span>
                         <div class="check-mark">
-                            <input class="input input-hidden" type="date" name="departure">
+                            <input class="input input-hidden text-b text_ttu text_1F2041-075" type="date" name="departure">
                         </div>
                     </label>
                 </div>
-                <div class="field block_mb22px">
+                <div class="field block_mb31px">
                     <span class="field-name text text_bold text_ttu block_mb5px">гости</span>
                     <div class="check-mark">
-                        <input class="input" name="amount of guests" type="text" value="Сколько гостей">
+                        <input class="input text-b text_1F2041-075" name="amount of guests" type="text" value="Сколько гостей">
                     </div>
                 </div>
-                <button class="button button_long block_mb40px">
+                <button class="button button_long">
                     <span class="text text_bold text_ttu text_FFF">подобрать номер</span>
                 </button>
             </div>
 
             <div class="account-reg">
-                <p class="text-l mb_22px">Регистрация аккаунта</p>
-                <input class="input" type="text" name="first name" placeholder="Имя">
-                <input class="input" type="text" name="last name" placeholder="Фамилия">
-                <div class="radio-button__wrapper">
+                <p class="text-l block_mb22px">Регистрация аккаунта</p>
+                <input class="input text-b text_1F2041-075 block_mb10px" type="text" name="first name" placeholder="Имя">
+                <input class="input text-b text_1F2041-075 block_mb10px" type="text" name="last name" placeholder="Фамилия">
+                <div class="radio-button__wrapper block_mb23px">
                     <label class="radio-button">
                         <input class="radio-button__input" type="radio" name="gender" checked>
                         <span class="checkbox-button__fake-input radio-button_round"></span>
@@ -56,17 +56,17 @@
                 </div>
                 <label class="field">
                     <span class="field-name text text_bold text_ttu block_mb5px">дата рождения</span>
-                    <input class="input input-hidden" type="date" name="masked text field">
+                    <input class="input input-hidden text-b text_1F2041-075 block_mb20px" type="date" name="masked text field">
                 </label>
                 <span class="field-name text text_bold text_ttu block_mb5px">данные для входа в сервис</span>
-                <input class="input text-b text_1F2041-075" type="email" name="email" placeholder="Email">
-                <input class="input text-b text_1F2041-075" type="password" name="password" placeholder="Пароль">
-                <label class="toggle">
+                <input class="input text-b text_1F2041-075 block_mb10px" type="email" name="email" placeholder="Email">
+                <input class="input text-b text_1F2041-075 block_mb20px" type="password" name="password" placeholder="Пароль">
+                <label class="toggle block_mb24px">
                     <input class="toggle__input" type="checkbox" name="special offers">
                     <span class="toggle__input_fake"></span>
                     <span class="text-b text_lh20 text_1F2041-075 block_ml10px">Получать спецпредложения</span>
                 </label>
-                <button class="rooms-search__button">
+                <button class="button button_long block_mb30px">
                     <span class="text text_bold text_ttu text_FFF">перейти к оплате</span>
                 </button>
                 <div class="href-button">
@@ -79,9 +79,9 @@
         </div>
 
 
-        <div class="wrapper__column1 ml_40px">
-            <div class="wrapper__column1_row1 mb_40px">
-                <div class="wrapper__text mb_20px">
+        <div class="wrapper__column1 block_ml40px">
+            <div class="booking mb_40px">
+                <div class="booking__wrapper mb_20px">
                     <p class="text text_bold">
                         <span class="text_fs14 text_lh17">№</span>
                         <span class="text_fs24 text_lh29">888</span>
@@ -92,53 +92,49 @@
                         <span>в сутки</span>
                     </p>
                 </div>
-                <div class="rooms-search__wrapper-2inputs mb_20px">
-                    <div class="rooms-search_width-15rem">
-                        <p class="text text_bold text_ttu mb_5px">прибытие</p>
-                        <!-- div нужен для создания after, так как у input after не создашь -->
-                        <div class="rooms-search__wrapper-select">
-                            <input class="rooms-search__input" type="date">
+                <div class="input-wrapper block_mb20px">
+                    <label class="field field_small">
+                        <span class="field-name text text_bold text_ttu block_mb5px">прибытие</span>
+                        <div class="check-mark">
+                            <input class="input input-hidden text-b text_ttu text_1F2041-075" type="date" name="arrival">
                         </div>
-                    </div>
-                    <div class="rooms-search_width-15rem">
-                        <p class="text text_bold text_ttu mb_5px">выезд</p>
-                        <div class="rooms-search__wrapper-select">
-                            <input class="rooms-search__input" type="date">
+                    </label>
+                    <label class="field field_small">
+                        <span class="field-name text text_bold text_ttu block_mb5px">выезд</span>
+                        <div class="check-mark">
+                            <input class="input input-hidden text-b text_ttu text_1F2041-075" type="date" name="departure">
                         </div>
+                    </label>
+                </div>
+                <div class="field block_mb31px">
+                    <span class="field-name text text_bold text_ttu block_mb5px">гости</span>
+                    <div class="check-mark">
+                        <input class="input text-b text_1F2041-075" name="amount of guests" type="text" value="3 гостя">
                     </div>
                 </div>
-                <p class="text text_bold text_ttu mb_5px">гости</p>
-                <div class="rooms-search__wrapper-select mb_31px">
-                    <select class="rooms-search__input rooms-search__select" name="amountOfGuests">
-                        <option value="">1 гость</option>
-                        <option value="">2 гостя</option>
-                        <option value="" selected>3 гостя</option>
-                        <option value="">4 гостя</option>
-                    </select>
-                </div>
-                <div class="wrapper__text mb_12px">
+                <div class="booking__wrapper mb_12px">
                     <p class="text-b text_lh22 text_1F2041-075">9 990₽ х 4 суток</p>
                     <p class="text-b text_lh22 text_1F2041-075">39 960₽</p>
                 </div>
-                <div class="wrapper__text check mb_16px">
-                    <div class="registration__radio-wrapper">
+                <div class="booking__wrapper check mb_16px">
+                    <div class="booking__wr">
                         <p class="text-b text_lh22 text_1F2041-075">Сбор за услуги: скидка 2 179₽</p>
-                        <div class="check-i ml_5px">
-                            <p class="check__text-i">i</p>
+                        <div class="booking__logo">
+                            <p class="booking__text">i</p>
                         </div>
                     </div>
                     <p class="text-b text_lh22 text_1F2041-075">0₽</p>
                 </div>
                 <div class="booking__wrapper check mb_20px">
-                    <div class="registration__radio-wrapper">
-                        <p class="text-b text_lh22 text_1F2041-075 check__add-services">Сбор за дополнительные <br>услуги</p>
-                        <div class="check-i ml_5px">
-                            <p class="check__text-i">i</p>
+                    <div class="booking__wr">
+                        <p class="text-b text_lh22 text_1F2041-075 booking_min-w">Сбор за дополнительные <br>услуги</p>
+                        <div class="booking__logo">
+                            <p class="booking__text">i</p>
                         </div>
                     </div>
                     <p class="text-b text_lh22 text_1F2041-075">300₽</p>
                 </div>
-                <div class="wrapper__text mb_20px">
+                <div class=" booking__wrapper mb_20px">
                     <p class="text-l">Итого</p>
                     <p class="text-m">38 081₽</p>
                 </div>
@@ -231,7 +227,7 @@
                         <td class="text text_1F2041-025" height="40" width="40">1</td>
                     </tr>
                 </table>
-                <div class="wrapper__text">
+                <div class=" booking__wrapper">
                     <button class="text text_bold text_ttu text_BC9CFF">очистить</button>
                     <button class="text text_bold text_ttu text_BC9CFF">применить</button>
                 </div>
@@ -251,7 +247,7 @@
                     </div>
                 </div>
                 
-                <div class="wrapper__text room_md mb_20px">
+                <div class=" booking__wrapper room_md mb_20px">
                     <p class="text text_bold">
                         <span class="text_fs14 text_lh17">№</span>
                         <span class="text_fs24 text_lh29">888</span>
@@ -290,7 +286,7 @@
                         <button class="room__image-scroll ml_4px"></button>
                     </div>
                 </div>
-                <div class="wrapper__text room_md mb_20px">
+                <div class=" booking__wrapper room_md mb_20px">
                     <p class="text text_bold">
                         <span class="text_fs14 text_lh17">№</span>
                         <span class="text_fs24 text_lh29">840</span>
