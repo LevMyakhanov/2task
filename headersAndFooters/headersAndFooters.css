@@ -229,7 +229,7 @@ a {
     display: flex;
     flex-direction: column;
 }
-.field__input {
+.input {
     font: inherit;
     font-size: 1.4rem;
     line-height: 1.8rem;

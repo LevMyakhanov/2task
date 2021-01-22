@@ -220,10 +220,10 @@ a {
 .field {
     display: block;
 }
-.field__name {
+.field-name {
     display: inline-block;
 }
-.field__input {
+.input {
     font: inherit;
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -236,23 +236,19 @@ a {
     border-radius: 0.4rem;
     outline: none;
 }
-.field__input-hidden::-webkit-calendar-picker-indicator {
+.input-hidden::-webkit-calendar-picker-indicator {
     opacity: 0;
 }
-.field__input::placeholder {
+.input::placeholder {
     color: rgba(31, 32, 65, 0.25);
 }
-.field__input:hover, .field__input:focus {
+.input:hover, .input:focus {
     border: 1px solid rgba(31, 32, 65, 0.5);
 }
-.field_appearance {
-    appearance: none;
-}
-.field__wrapper-select {
-    display: block;
+.check-mark {
     position: relative;
 }
-.field__wrapper-select::after {
+.check-mark::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -267,16 +263,17 @@ a {
     transform: rotateZ(45deg);
     pointer-events: none;
 }
-.field__inputs-wr {
+.select_appearance {
+    appearance: none;
+}
+.input-wrapper {
     display: flex;
     justify-content: space-between;
 }
 .field_small {
-    display: block;
     width: 15rem;
 }
 .field_middle {
-    display: block;
     width: 26.6rem;
 }
 .field__href {
@@ -561,7 +558,7 @@ a {
 .form-elements__row2_column1 {
     width: 26.6rem;
 }
-.dropdown-room {
+.dropdown-w26 {
     width: 26.6rem;
 }
 .dropdown-default {
@@ -621,7 +618,7 @@ a {
     min-width: 2.6rem;
     text-align: center;
 }
-.dropdown-people {
+.dropdown-w32 {
     width: 32rem;
 }
 
