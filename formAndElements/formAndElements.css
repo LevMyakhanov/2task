@@ -110,15 +110,6 @@ a {
 .display_b {
     display: block;
 }
-.display_i-b {
-    display: inline-block;
-}
-
-/* убирает невидимый пробел между псевдоклассом и текстом,
-также можно убрать через запись спанов в одну строку без пробелов */
-.display_f {
-    display: flex;
-}
 
 .block_mt-3px {
     margin-top: -0.3rem;
@@ -209,10 +200,13 @@ a {
 }
 
 
+.form-elements {
+    padding-top: 14.3rem;
+    padding-left: 14rem;
+    padding-bottom: 13.1rem;
+}
 .form-elements__row {
     display: flex;
-    margin-top: 14.3rem;
-    margin-left: 14rem;
 }
 .form-elements__row1_column1 {
     width: 32rem;
@@ -552,8 +546,7 @@ a {
 .form-elements__row2 {
     display: flex;
     margin-top: 10rem;
-    margin-left: 14rem;
-    margin-bottom: 5.444rem;
+    margin-bottom: 5rem;
 }
 .form-elements__row2_column1 {
     width: 26.6rem;
@@ -624,7 +617,6 @@ a {
 
 
 .form-elements__row3 {
-    margin-left: 14rem;
     display: flex;
     margin-bottom: 10.2rem;
 }
@@ -681,8 +673,6 @@ a {
 
 
 .form-elements__row4 {
-    margin-left: 14rem;
-    margin-bottom: 13.1rem;
     display: flex;
 }
 .form-elements__row4_column1 {
@@ -714,9 +704,6 @@ a {
 .like-comments {
     display: flex;
 }
-
-
-
 
 
 
