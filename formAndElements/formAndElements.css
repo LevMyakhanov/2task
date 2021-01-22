@@ -183,7 +183,15 @@ a {
 .block_mb24px {
     margin-bottom: 2.4rem;
 }
-
+.block_mb12px {
+    margin-bottom: 1.2rem;
+}
+.block_mb26px {
+    margin-bottom: 2.6rem;
+}
+.block_mb39px {
+    margin-bottom: 3.9rem;
+}
 
 .block_ml223px {
     margin-left: 22.3rem;
@@ -222,7 +230,7 @@ a {
 
 .form-elements {
     padding-top: 14.3rem;
-    padding-left: 14rem;
+    padding-left: 14.1rem;
     padding-bottom: 13.1rem;
 }
 .form-elements__row {
@@ -247,6 +255,7 @@ a {
 }
 .input-hidden::-webkit-calendar-picker-indicator {
     opacity: 0;
+    margin: 0;
 }
 .input::placeholder {
     color: rgba(31, 32, 65, 0.25);
@@ -298,7 +307,7 @@ a {
 
 .form-elements__row1_column2 {
     margin-left: 12.6rem;
-    width: 26rem;
+    width: 26.2rem;
 }
 .checkbox-button__label {
     display: flex;
@@ -380,7 +389,7 @@ a {
 }
 .toggle__input_fake {
     position: relative;
-    width: 4rem;
+    min-width: 3.9rem;
     height: 2rem;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 1rem;
@@ -439,7 +448,7 @@ a {
 }
 .button-like__text { 
     color: rgba(31, 32, 65, 0.25);
-    min-width: 1rem;
+    min-width: 0.8rem;
     text-align: center;
 }
 .button-like_pressed {
@@ -463,7 +472,7 @@ a {
 }
 
 .form-elements__row1_column3 {
-    margin-left: 13.2rem;
+    margin-left: 13rem;
 }
 
 .slider {
@@ -576,7 +585,7 @@ a {
     border: 1px solid rgba(31, 32, 65, 0.5);
 }
 .dropdown {
-    width: 26rem;
+    width: 26.6rem;
 }
 .dropdown__wrapper {
     border: 1px solid rgba(31, 32, 65, 0.5);
@@ -602,6 +611,10 @@ a {
     background: #FFFFFF;
     border-radius: 50%;
     border: 0.1rem solid rgba(31, 32, 65, 0.5);
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(31, 32, 65, 0.5);
 }
 .dropdown__button_tran {
     border: 1px solid rgba(31, 32, 65, 0.25);
@@ -719,7 +732,7 @@ a {
 .cards__column1 {
     width: 38rem;
 }
-.room-search, .account-reg, .booking {
+.room-search, .account-reg, .booking, .enter {
     width: 38rem;
     background: #FFFFFF;
     border: 0.1rem solid rgba(0, 0, 0, 0.12);
@@ -761,4 +774,7 @@ a {
     font-size: 12px;
     line-height: 14px;
     color: rgba(31, 32, 65, 0.25);
+}
+.enter {
+    height: 35.8rem;
 }
