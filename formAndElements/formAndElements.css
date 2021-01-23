@@ -224,6 +224,16 @@ td {
 .block_mb44px {
     margin-bottom: 4.4rem;
 }
+.block_mb21px {
+    margin-bottom: 2.1rem;
+}
+.block_mb1px {
+    margin-bottom: 0.1rem;
+}
+.block_mb25px {
+    margin-bottom: 2.5rem;
+}
+
 
 .block_ml223px {
     margin-left: 22.3rem;
@@ -261,8 +271,15 @@ td {
 .block_ml4px {
     margin-left: 0.4rem;
 }
-.block_ml284px {
-    margin-left: 28.4rem;
+.block_ml4px {
+    margin-left: 1.4rem;
+}
+.block_ml216px {
+    margin-left: 21.6rem;
+}
+
+.block_mr20px {
+    margin-right: 2rem;
 }
 
 
@@ -956,6 +973,7 @@ td {
     align-items: center;
     background: #FFF;
     margin-bottom: 4rem;
+    justify-content: space-between;
 }
 .logo-toxin {
     width: 10.5rem;
@@ -965,6 +983,7 @@ td {
 .header-guest__l-wr {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .header-list {
     display: flex;
@@ -1027,23 +1046,23 @@ td {
     display: flex;
 }
 .footer__column1 {
-    width: 26rem;
+    min-width: 26rem;
     margin-left: 4rem;
 }
 .footer__column2 {
-    width: 14.3rem;
+    min-width: 14.3rem;
     margin-left: 4rem;
     display: flex;
     flex-direction: column;
 }
 .footer__column3 {
-    width: 10.8rem;
+    min-width: 10.8rem;
     margin-left: 5.7rem;
     display: flex;
     flex-direction: column;
 }
 .footer__column4 {
-    width: 14.9rem;
+    min-width: 14.9rem;
     margin-left: 9.2rem;
     display: flex;
     flex-direction: column;
