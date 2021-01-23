@@ -114,6 +114,7 @@ a {
     align-items: center;
     background: #FFF;
     margin-bottom: 4rem;
+    justify-content: space-between;
 }
 .logo-toxin {
     width: 10.5rem;
@@ -123,6 +124,7 @@ a {
 .header-guest__l-wr {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .header-list {
     display: flex;
