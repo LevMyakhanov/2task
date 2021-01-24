@@ -47,13 +47,13 @@ td {
     line-height: 1.5rem;
     /* во всех браузерах по умолчанию font-weight: 400, font-style: normal */
 }
-.text-b {
+.text text_b {
     font-family: "Montserrat", sans-serif, Helvetica;
     font-size: 1.4rem;
     color: #1f2041;
     line-height: 1.8rem;
 }
-.text-m {
+.text text_m {
     font-family: "Montserrat", sans-serif, Helvetica;
     font-size: 1.9rem;
     color: #1f2041;
@@ -335,7 +335,7 @@ td {
 .registration__radio:checked + .registration__fake-input::before {
     display: block;
 }
-.registration__radio:checked ~ .text-b {
+.registration__radio:checked ~ .text text_b {
     color: rgba(31, 32, 65, 0.75);
 }
 .registration__toggle {
