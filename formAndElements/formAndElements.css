@@ -356,6 +356,10 @@ a {
 .field_small {
     width: 15rem;
 }
+.filter-date {
+    display: block;
+    width: 26.6rem;
+}
 .field_middle {
     width: 26.6rem;
 }
@@ -775,7 +779,7 @@ a {
 .form-elements__row4 {
     display: flex;
 }
-.form-elements__row4_column1 {
+.room-info {
     width: 29.1rem;
 }
 .advantages {
@@ -959,7 +963,7 @@ a {
 }
 
 
-.cards__column3_row2 {
+.room {
     width: 27rem;
     height: 25.7rem;
     background-color: #FFFFFF;
