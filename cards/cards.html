@@ -39,7 +39,7 @@
             </div>
 
             <div class="account-reg">
-                <p class="text text_l block block_mb22px">Регистрация аккаунта</p>
+                <p class="text text_l account-reg_pp block block_mb22px">Регистрация аккаунта</p>
                 <input class="input text text_b text_1F2041-075 block block_mb10px" type="text" name="first name" placeholder="Имя">
                 <input class="input text text_b text_1F2041-075 block block_mb10px" type="text" name="last name" placeholder="Фамилия">
                 <div class="radio-button__wrapper block block_mb23px">
@@ -82,12 +82,12 @@
         <div class="cards__column1 block block_ml40px">
             <div class="booking block block_mb39px">
                 <div class="booking__wrapper block block_mb23px">
-                    <p class="text text_bold">
+                    <p class="booking__room-name text text_bold">
                         <span class="text_fs14 text_lh17">№</span>
-                        <span class="text_fs24 text_lh29">888</span>
+                        <span class="booking__room-number text_fs24 text_lh29">888</span>
                         <span class="text_ttu text_BC9CFF">люкс</span>
                     </p>
-                    <p class="text text_lh18 text_1F2041-05">
+                    <p class="booking__room-price text text_lh14 text_1F2041-05">
                         <span class="text_fs14 text_bold ">9 990₽</span>
                         <span>в сутки</span>
                     </p>
@@ -112,30 +112,30 @@
                         <input class="input text text_b text_1F2041-075" name="amount of guests" type="text" value="3 гостя">
                     </div>
                 </div>
-                <div class="booking__wrapper block block_mb12px">
+                <div class="booking__wrapper block block_mb13px">
                     <p class="text text_b text_lh22 text_1F2041-075">9 990₽ х 4 суток</p>
                     <p class="text text_b text_lh22 text_1F2041-075">39 960₽</p>
                 </div>
-                <div class="booking__wrapper check block block_mb12px">
+                <div class="booking__wrapper-top check block block_mb15px">
                     <div class="booking__wr">
-                        <p class="text text_b text_lh22 text_1F2041-075">Сбор за услуги: скидка 2 179₽</p>
+                        <p class="text text_b text_lh18 text_1F2041-075">Сбор за услуги: скидка 2 179₽</p>
                         <!-- как расположить иконку -->
                         <div class="booking__logo">
                             <p class="booking__text">i</p>
                         </div>
                     </div>
-                    <p class="text text_b text_lh22 text_1F2041-075">0₽</p>
+                    <p class="text text_b text_lh18 text_1F2041-075">0₽</p>
                 </div>
-                <div class="booking__wrapper check block block_mb30px">
+                <div class="booking__wrapper-top check block block_mb30px">
                     <div class="booking__wr">
-                        <p class="text text_b text_lh22 text_1F2041-075 booking_min-w">Сбор за дополнительные <br>услуги</p>
+                        <p class="text text_b text_lh18 text_1F2041-075 booking_min-w">Сбор за дополнительные <br>услуги</p>
                         <div class="booking__logo">
                             <p class="booking__text">i</p>
                         </div>
                     </div>
-                    <p class="text text_b text_lh22 text_1F2041-075">300₽</p>
+                    <p class="text text_b text_lh18 text_1F2041-075">300₽</p>
                 </div>
-                <div class=" booking__wrapper block block_mb20px">
+                <div class="booking__wrapper block block_mb20px block_mr-9px">
                     <p class="text text_m">Итого</p>
                     <p class="text text_m">38 081₽</p>
                 </div>
@@ -144,8 +144,8 @@
                 </button>
             </div>
             <div class="enter">
-                <p class="text text_l block block_mb26px">Войти</p>
-                <input class="input text text_b text_1F2041-075 block block_mb10px" type="email" name="email" placeholder="Email">
+                <p class="enter__text-p_pp text text_l block block_mb26px">Войти</p>
+                <input class="input text text_b text_1F2041-075 enter__input_pp block block_mb10px" type="email" name="email" placeholder="Email">
                 <input class="input text text_b text_1F2041-075 block block_mb20px" type="password" name="password" placeholder="Пароль">
                 <button class="button button_long block block_mb30px">
                     <span class="text text_bold text_ttu text_FFF">войти</span>
@@ -153,7 +153,7 @@
                 <div class="href-button">
                     <a href="#"><p class="text text_b text_000">Нет аккаунта на Toxin</p></a>
                     <button class="button button_bordered">
-                        <span class="text text_bold text_ttu text_BC9CFF">click me</span>
+                        <span class="text text_bold text_ttu text_BC9CFF">создать</span>
                     </button>
                 </div>
             </div>
@@ -161,67 +161,67 @@
 
 
         <div class="cards__column3 block block_ml40px">
-            <div class="cards__column3_row1 block block_mb40px">
+            <div class="calendar calendar__pp block block_mb40px">
                 <div class="calendar__header block block_mb30px">
-                    <a href="#"><img src="img/icons/arrow_back.png" alt="arrow_back"></a>
-                    <p class="text text_m">Август 2019</p>
-                    <a href="#"><img src="img/icons/arrow_forward_violet.png" alt="arrow_forward"></a>
+                    <a href="#"><img class="calendar__arrow_l" src="img/icons/arrow_back.png" alt="arrow_back"></a>
+                    <p class="calendar__header_text text text_m">Август 2019</p>
+                    <a href="#"><img class="calendar__arrow_r" src="img/icons/arrow_forward_violet.png" alt="arrow_forward"></a>
                 </div>
 
-                <table class="block block_mb20px">
+                <table class="calendar__table block block_mb20px">
                     <tr>
-                        <td class="text text_bold text_BC9CFF tt_none" height="40" width="40">Пн</td>
-                        <td class="text text_bold text_BC9CFF tt_none" height="40" width="40">Вт</td>
-                        <td class="text text_bold text_BC9CFF tt_none" height="40" width="40">Ср</td>
-                        <td class="text text_bold text_BC9CFF tt_none" height="40" width="40">Чт</td>
-                        <td class="text text_bold text_BC9CFF tt_none" height="40" width="40">Пт</td>
-                        <td class="text text_bold text_BC9CFF tt_none" height="40" width="40">Сб</td>
-                        <td class="text text_bold text_BC9CFF tt_none" height="40" width="40">Вс</td>
+                        <td class="calendar__td text text_bold text_BC9CFF tt_none">Пн</td>
+                        <td class="calendar__td text text_bold text_BC9CFF tt_none">Вт</td>
+                        <td class="calendar__td text text_bold text_BC9CFF tt_none">Ср</td>
+                        <td class="calendar__td text text_bold text_BC9CFF tt_none">Чт</td>
+                        <td class="calendar__td text text_bold text_BC9CFF tt_none">Пт</td>
+                        <td class="calendar__td text text_bold text_BC9CFF tt_none">Сб</td>
+                        <td class="calendar__td text text_bold text_BC9CFF tt_none">Вс</td>
                     </tr>
                     <tr>
-                        <td class="text text_1F2041-025" height="40" width="40">29</td>
-                        <td class="text text_1F2041-025" height="40" width="40">30</td>
-                        <td class="text text_1F2041-025" height="40" width="40">31</td>
-                        <td class="text text_1F2041-05" height="40" width="40">1</td>
-                        <td class="text text_1F2041-05" height="40" width="40">2</td>
-                        <td class="text text_1F2041-05" height="40" width="40">3</td>
-                        <td class="text text_1F2041-05" height="40" width="40">4</td>
+                        <td class="calendar__td text text_1F2041-025">29</td>
+                        <td class="calendar__td text text_1F2041-025">30</td>
+                        <td class="calendar__td text text_1F2041-025">31</td>
+                        <td class="calendar__td text text_1F2041-05">1</td>
+                        <td class="calendar__td text text_1F2041-05">2</td>
+                        <td class="calendar__td text text_1F2041-05">3</td>
+                        <td class="calendar__td text text_1F2041-05">4</td>
                     </tr>
                     <tr>
-                        <td class="text text_1F2041-05" height="40" width="40">5</td>
-                        <td class="text text_1F2041-05" height="40" width="40">6</td>
-                        <td class="text text_1F2041-05" height="40" width="40">7</td>
-                        <td class="calendar_green text text_bold text_FFF" height="40" width="40">8</td>
-                        <td class="text text_1F2041-05" height="40" width="40">9</td>
-                        <td class="text text_1F2041-05" height="40" width="40">10</td>
-                        <td class="text text_1F2041-05" height="40" width="40">11</td>
+                        <td class="calendar__td text text_1F2041-05">5</td>
+                        <td class="calendar__td text text_1F2041-05">6</td>
+                        <td class="calendar__td text text_1F2041-05">7</td>
+                        <td class="calendar__td calendar_green text text_bold text_FFF">8</td>
+                        <td class="calendar__td text text_1F2041-05">9</td>
+                        <td class="calendar__td text text_1F2041-05">10</td>
+                        <td class="calendar__td text text_1F2041-05">11</td>
                     </tr>
                     <tr>
-                        <td class="text text_1F2041-05" height="40" width="40">12</td>
-                        <td class="text text_1F2041-05" height="40" width="40">13</td>
-                        <td class="text text_1F2041-05" height="40" width="40">14</td>
-                        <td class="text text_1F2041-05" height="40" width="40">15</td>
-                        <td class="text text_1F2041-05" height="40" width="40">16</td>
-                        <td class="text text_1F2041-05" height="40" width="40">17</td>
-                        <td class="text text_1F2041-05" height="40" width="40">18</td>
+                        <td class="calendar__td text text_1F2041-05">12</td>
+                        <td class="calendar__td text text_1F2041-05">13</td>
+                        <td class="calendar__td text text_1F2041-05">14</td>
+                        <td class="calendar__td text text_1F2041-05">15</td>
+                        <td class="calendar__td text text_1F2041-05">16</td>
+                        <td class="calendar__td text text_1F2041-05">17</td>
+                        <td class="calendar__td text text_1F2041-05">18</td>
                     </tr>
                     <tr>
-                        <td class="calendar_purple text text_bold text_FFF" height="40" width="40">19</td>
-                        <td class="text text_1F2041-05" height="40" width="40">20</td>
-                        <td class="text text_1F2041-05" height="40" width="40">21</td>
-                        <td class="text text_1F2041-05" height="40" width="40">22</td>
-                        <td class="calendar_purple text text_bold text_FFF" height="40" width="40">23</td>
-                        <td class="text text_1F2041-05" height="40" width="40">24</td>
-                        <td class="text text_1F2041-05" height="40" width="40">25</td>
+                        <td class="calendar__td calendar_purple text text_bold text_FFF">19</td>
+                        <td class="calendar__td text text_1F2041-05">20</td>
+                        <td class="calendar__td text text_1F2041-05">21</td>
+                        <td class="calendar__td text text_1F2041-05">22</td>
+                        <td class="calendar__td calendar_purple text text_bold text_FFF">23</td>
+                        <td class="calendar__td text text_1F2041-05">24</td>
+                        <td class="calendar__td text text_1F2041-05">25</td>
                     </tr>
                     <tr>
-                        <td class="text text_1F2041-05" height="40" width="40">26</td>
-                        <td class="text text_1F2041-05" height="40" width="40">27</td>
-                        <td class="text text_1F2041-05" height="40" width="40">28</td>
-                        <td class="text text_1F2041-05" height="40" width="40">29</td>
-                        <td class="text text_1F2041-05" height="40" width="40">30</td>
-                        <td class="text text_1F2041-05" height="40" width="40">31</td>
-                        <td class="text text_1F2041-025" height="40" width="40">1</td>
+                        <td class="calendar__td text text_1F2041-05">26</td>
+                        <td class="calendar__td text text_1F2041-05">27</td>
+                        <td class="calendar__td text text_1F2041-05">28</td>
+                        <td class="calendar__td text text_1F2041-05">29</td>
+                        <td class="calendar__td text text_1F2041-05">30</td>
+                        <td class="calendar__td text text_1F2041-05">31</td>
+                        <td class="calendar__td text text_1F2041-025">1</td>
                     </tr>
                 </table>
                 <div class=" booking__wrapper">
@@ -234,9 +234,9 @@
                 <!-- у картинки не скруглились углы -->
                 <div class="room__img-wr">
                     <img class="room__img" src="img/icons/image.jpg" alt="room1">
-                    <button class="room__button"></button>
+                    <button class="room__button room__button_left"></button>
                     <button class="room__button room__button_right"></button>
-                    <div class="room__rounds-wrapper indicators">
+                    <div class="room__rounds-wrapper ">
                         <button class="room__image-scroll room__image-scroll_active"></button>
                         <button class="room__image-scroll block block_ml4px"></button>
                         <button class="room__image-scroll block block_ml4px"></button>
@@ -244,13 +244,13 @@
                     </div>
                 </div>
                 
-                <div class=" booking__wrapper room_md block block_mb20px">
+                <div class="booking__wrapper room_md block block_mb20px">
                     <p class="text text_bold">
                         <span class="text_fs14 text_lh17">№</span>
-                        <span class="text_fs24 text_lh29">888</span>
-                        <span class="text_ttu text_BC9CFF">люкс</span>
+                        <span class="text_fs20 text_lh29">888</span>
+                        <span class=" text_ttu text_BC9CFF block_ml-3px">люкс</span>
                     </p>
-                    <p class="text text_lh18 text_1F2041-05">
+                    <p class="booking__text-r_pp text text_lh18 text_1F2041-05">
                         <span class="text_fs14 text_bold">9 990₽</span>
                         <span>в сутки</span>
                     </p>
@@ -263,7 +263,7 @@
                         <button class="room__button-star"><img src="img/icons/star.png" alt="star"></button>
                         <button class="room__button-star"><img src="img/icons/star.png" alt="star"></button>
                     </div>
-                    <p class="text text_lh18 text_1F2041-05">
+                    <p class="block block_mr9px text text_lh18 text_1F2041-05">
                         <span class="text_fs14 text_bold ">145</span>
                         <span>Отзывов</span>
                     </p>
@@ -273,24 +273,25 @@
             <div class="cards__column3_row2">
                 <!-- у картинки не скруглились углы -->
                 <div class="room__img-wr">
-                    <img class="room__img" src="img/icons/image2.jpg" alt="room2">
-                    <button class="room__button"></button>
+                    <img class="room__img" src="img/icons/image2.jpg" alt="room1">
+                    <button class="room__button room__button_left"></button>
                     <button class="room__button room__button_right"></button>
-                    <div class="room__rounds-wrapper indicators">
+                    <div class="room__rounds-wrapper ">
                         <button class="room__image-scroll room__image-scroll_active"></button>
                         <button class="room__image-scroll block block_ml4px"></button>
                         <button class="room__image-scroll block block_ml4px"></button>
                         <button class="room__image-scroll block block_ml4px"></button>
                     </div>
                 </div>
-                <div class=" booking__wrapper room_md block block_mb20px">
+                
+                <div class="booking__wrapper room_md block block_mb20px">
                     <p class="text text_bold">
                         <span class="text_fs14 text_lh17">№</span>
-                        <span class="text_fs24 text_lh29">840</span>
-                        <span class="text_ttu text_BC9CFF">люкс</span>
+                        <span class="text_fs20 text_lh29">840</span>
+                        <span class=" text_ttu text_BC9CFF block_ml-3px">люкс</span>
                     </p>
-                    <p class="text text_lh18 text_1F2041-05">
-                        <span class="text_fs14 text_bold ">9 990₽</span>
+                    <p class="booking__text-r_pp text text_lh18 text_1F2041-05">
+                        <span class="text_fs14 text_bold">9 990₽</span>
                         <span>в сутки</span>
                     </p>
                 </div>
@@ -302,8 +303,8 @@
                         <button class="room__button-star"><img src="img/icons/star.png" alt="star"></button>
                         <button class="room__button-star"><img src="img/icons/star.png" alt="star"></button>
                     </div>
-                    <p class="text text_lh18 text_1F2041-05">
-                        <span class="text_fs14 text_bold">65</span>
+                    <p class="block block_mr9px text text_lh18 text_1F2041-05">
+                        <span class="text_fs14 text_bold ">65</span>
                         <span>Отзывов</span>
                     </p>
                 </div>

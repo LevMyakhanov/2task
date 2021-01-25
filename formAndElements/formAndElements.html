@@ -30,19 +30,20 @@
             </div>
             <label class="field block block_mb41px">
                 <span class="field-name text text_bold text_ttu block block_mb5px">masked text field</span>
-                <input class="input input-hidden text text_b text_ttu text_1F2041-075" type="date" name="masked text field">
+                <!-- <input class="input input-hidden text text_b text_ttu text_1F2041-075" type="date" name="masked text field"> -->
+                <input class="input input-hidden text text_b text_ttu text_1F2041-075" type="text" name="masked text field"  pattern="\d{1,2}\/d{1,2}\/d{4}" placeholder="ДД.ММ.ГГГГ" readonly>
             </label>
             <div class="input-wrapper block block_mb40px">
                 <label class="field field_small">
                     <span class="field-name text text_bold text_ttu block block_mb5px">date Dropdown</span>
                     <span class="check-mark">
-                        <input class="input input-hidden text text_b text_ttu text_1F2041-075" type="date" name="arrival">
+                        <input class="input input-hidden text text_b text_ttu text_1F2041-075" type="date" name="arrival" readonly>
                     </span>
                 </label>
                 <label class="field field_small">
                     <span class="field-name text text_bold text_ttu block block_mb5px">date Dropdown</span>
                     <span class="check-mark">
-                        <input class="input input-hidden text text_b text_ttu text_1F2041-075" type="date" name="departure">
+                        <input class="input input-hidden text text_b text_ttu text_1F2041-075" type="date" name="departure" value="2019-08-19" readonly>
                     </span>
                 </label>
             </div>
@@ -52,13 +53,13 @@
                     <input class="input text text_b text_1F2041-075" name="amount of guests" type="text" value="19 авг - 23 авг">
                 </span>
             </div>
-            <label class="field field_middle">
-                <span class="field-name text text_bold text_ttu block block_mb5px">subscription text field</span>
-                <input class="input text text_b text_1F2041-075" type="email" name="subscription text field" placeholder="Email">
-            </label>
-            <button class="field__href block block_ml223px">
-                <img src="img/icons/arrow_forward_violet.png" alt="arrow_forward_violet">
-            </button>
+            <form class="form-field" action="https://echo.htmlacademy.ru" method="post">
+                <label class="field field_middle">
+                    <span class="field-name text text_bold text_ttu block block_mb5px">subscription text field</span>
+                    <input class="input text text_b text_1F2041-075" type="email" name="subscription text field" placeholder="Email">
+                </label>
+                <button class="form-field__button block_ml223px"></button>
+            </form>
         </div>
 
         <div class="form-elements__row1_column2">
@@ -220,10 +221,10 @@
                         <input class="input input_square-angles field_border-color text text_b text_1F2041-075" type="text" name="rooms&beds" value="2 спальни, 2 кровати...">
                     </span>
                 </label>
-                <div class="dropdown__wrapper">
+                <div class="dropdown__wrapper dropdown__wrapper_off-buttons">
                     <div class="dropdown-flex block block_mb7px">
                         <span class="text text_bold text_ttu">спальни</span>
-                        <div>
+                        <div class="dropdown__buttons">
                             <button class="dropdown__button">-</button>
                             <span class="text text_bold text_ttu dropdown__amount">2</span>
                             <button class="dropdown__button">+</button>
@@ -231,7 +232,7 @@
                     </div>
                     <div class="dropdown-flex block block_mb7px">
                         <span class="text text_bold text_ttu">кровати</span>
-                        <div>
+                        <div class="dropdown__buttons">
                             <button class="dropdown__button">-</button>
                             <span class="text text_bold text_ttu dropdown__amount">2</span>
                             <button class="dropdown__button">+</button>
@@ -239,7 +240,7 @@
                     </div>
                     <div class="dropdown-flex">
                         <span class="text text_bold text_ttu">ванные комнаты</span>
-                        <div>
+                        <div class="dropdown__buttons">
                             <button class="dropdown__button dropdown__button_tran">-</button>
                             <span class="text text_bold text_ttu dropdown__amount">0</span>
                             <button class="dropdown__button">+</button>
@@ -256,7 +257,7 @@
             <div class="dropdown__wrapper">
                 <div class="dropdown-flex block block_mb7px">
                     <span class="text text_bold text_ttu">взрослые</span>
-                    <div>
+                    <div class="dropdown__buttons">
                         <button class="dropdown__button dropdown__button_tran"><span>-</span></button>
                         <span class="text text_bold text_ttu dropdown__amount">0</span>
                         <button class="dropdown__button">+</button>
@@ -264,7 +265,7 @@
                 </div>
                 <div class="dropdown-flex block block_mb7px">
                     <span class="text text_bold text_ttu">дети</span>
-                    <div>
+                    <div class="dropdown__buttons">
                         <button class="dropdown__button dropdown__button_tran">-</button>
                         <span class="text text_bold text_ttu dropdown__amount">0</span>
                         <button class="dropdown__button">+</button>
@@ -272,7 +273,7 @@
                 </div>
                 <div class="dropdown-flex block block_mb19px">
                     <span class="text text_bold text_ttu">младенцы</span>
-                    <div>
+                    <div class="dropdown__buttons">
                         <button class="dropdown__button dropdown__button_tran">-</button>
                         <span class="text text_bold text_ttu dropdown__amount">0</span>
                         <button class="dropdown__button">+</button>
@@ -290,7 +291,7 @@
             <div class="dropdown__wrapper">
                 <div class="dropdown-flex block block_mb7px">
                     <span class="text text_bold text_ttu">взрослые</span>
-                    <div>
+                    <div class="dropdown__buttons">
                         <button class="dropdown__button"><span>-</span></button>
                         <span class="text text_bold text_ttu dropdown__amount">2</span>
                         <button class="dropdown__button">+</button>
@@ -298,7 +299,7 @@
                 </div>
                 <div class="dropdown-flex block block_mb7px">
                     <span class="text text_bold text_ttu">дети</span>
-                    <div>
+                    <div class="dropdown__buttons">
                         <button class="dropdown__button">-</button>
                         <span class="text text_bold text_ttu dropdown__amount">1</span>
                         <button class="dropdown__button">+</button>
@@ -306,7 +307,7 @@
                 </div>
                 <div class="dropdown-flex block block_mb19px">
                     <span class="text text_bold text_ttu">младенцы</span>
-                    <div>
+                    <div class="dropdown__buttons">
                         <button class="dropdown__button dropdown__button_tran">-</button>
                         <span class="text text_bold text_ttu dropdown__amount">0</span>
                         <button class="dropdown__button">+</button>
