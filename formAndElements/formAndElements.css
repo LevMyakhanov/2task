@@ -364,13 +364,15 @@ a {
     width: 26.6rem;
 }
 
-.form-field__button {
+.form-field__button,
+.form-field-button-hf {
     display: block;
     margin-top: -4.4rem;
     width: 4.4rem;
     height: 4.4rem;
 }
-.form-field__button::after {
+.form-field__button::after,
+.form-field-button-hf::after {
     content: url("img/icons/arrow_forward_violet.png");
 }
 
@@ -385,7 +387,7 @@ a {
 .checkbox-button__input {
     display: none;
 }
-.checkbox-button__fake-input {
+.checkbox-button__fake-input, .radio-button__fake-input {
     position: relative;
     width: 2rem;
     height: 2rem;
@@ -393,7 +395,9 @@ a {
     border-radius: 0.4rem;
 }
 .checkbox-button__fake-input::before, 
-.checkbox-button__fake-input::after {
+.checkbox-button__fake-input::after,
+.radio-button__fake-input::before,
+.radio-button__fake-input::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -403,12 +407,14 @@ a {
     width: 0.6rem;
     transform: rotate(45deg);
 }
-.checkbox-button__fake-input::before {
+.checkbox-button__fake-input::before,
+.radio-button__fake-input::before {
     display: none;
     margin-top: -0.5rem;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
-.checkbox-button__fake-input::after {
+.checkbox-button__fake-input::after,
+.radio-button__fake-input::after {
     margin-top: -0.8rem;
     background: #FFFFFF;
 }
@@ -845,7 +851,7 @@ a {
     margin-left: -1px;
     margin-top: -2px;
 }
-.radio-button__wrapper {
+.radio-button-wrapper {
     display: flex;
 }
 .href-button {
@@ -857,16 +863,16 @@ a {
     height: 51.1rem;
     margin-top: 0.4rem;
 }
-.booking__wrapper {
+.booking-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.booking__text-r_pp {
+.booking-text-r-pp {
     margin-top: 1px;
     margin-right: 1px;
 }
-.booking__wrapper-top {
+.booking-wrapper_top {
     display: flex;
     justify-content: space-between;
 }
@@ -1073,7 +1079,7 @@ a {
 .headers-footers {
     width: 144rem;
     padding: 14rem 0;
-    background: #E5E5E5;
+    background: #F4F4F6;
 }
 .header-guest {
     height: 7rem;
@@ -1193,17 +1199,17 @@ a {
     align-items: center;
     background: #FFF;
 }
-.footer__media {
+.footer-media {
     display: flex;
     justify-content: space-between;
 }
-.footer__twi {
+.footer-twi {
     margin-top: 2px;
 }
-.footer__insta {
+.footer-insta {
     margin-right: 1px;
 }
-.footer3__wrapper {
+.footer3-wrapper {
     width: 76.8rem;
     height: 36.7rem;
     background: #FFF;
