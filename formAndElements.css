@@ -373,7 +373,7 @@ a {
 }
 .form-field__button::after,
 .form-field-button-hf::after {
-    content: url("img/icons/arrow_forward_violet.png");
+    content: url("img/arrow_forward_violet.png");
 }
 
 
@@ -613,7 +613,7 @@ a {
     right: 0;
     top: 50%;
     margin-top: -2.2rem;
-    background-image: url("img/icons/arrow_forward_white.png");
+    background-image: url("img/arrow_forward_white.png");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -1089,6 +1089,7 @@ a {
     background: #FFF;
     margin-bottom: 4rem;
     justify-content: space-between;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 .logo-toxin {
     width: 10.5rem;
@@ -1156,6 +1157,7 @@ a {
     height: 37.2rem;
     background: #FFF;
     padding: 10rem 14rem;
+    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
 }
 .footer_sm {
     display: flex;
@@ -1198,6 +1200,7 @@ a {
     justify-content: space-between;
     align-items: center;
     background: #FFF;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 .footer-media {
     display: flex;
@@ -1218,4 +1221,5 @@ a {
     align-items: center;
     flex-direction: column;
     margin: 4rem 33.6rem 0 33.6rem;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
